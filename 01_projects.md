@@ -1,7 +1,5 @@
 ---
-layout: page
-title: Projects
-permalink: /projects/
+layout: projects
+title: Achievements
+permalink: /achievements/
 ---
-
-Complete this blog.
