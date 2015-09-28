@@ -2,33 +2,94 @@
 layout: default
 ---
 
+<style>
+.project {
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 1em;;
+
+}
+.project img {
+    width: 250px;
+}
+.project > h3 {
+    font-size: 1.25em;
+    margin: 0;
+}
+.project-wrapper {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+.project-wrapper > h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em 0;
+}
+
+.overlay {
+    z-index: 10;
+    background: #1DB7FF;
+    position: absolute;
+}
+</style>
+
 <script>
-    var req = new XMLHttpRequest();
-    req.open('GET', '/projects.json');
-    req.onload = parseProjects;
-    req.send();
+    var req = new XMLHttpRequest()
+    req.open('GET', '/projects.json')
+    req.onload = parseProjects
+    req.send()
 
     function parseProjects(response) {
-        var projects = JSON.parse(response.target.responseText),
-            ongoing = document.getElementById("ongoing");
+        var projects = JSON.parse(response.target.responseText)
 
         projects.forEach(function (p) {
-            var div = document.createElement("div");
-            div.innerHTML = "patate";
-            ongoing.appendChild(div);
+            var div = document.createElement("div"),
+                img = document.createElement("img"),
+                h3 = document.createElement("h3")
+
+            // Populate the content
+            img.src = '/img/achievements/' + p.icon
+            h3.innerHTML = p.title
+            div.className = "project"
+
+            // Add listeners
+            div.addEventListener('mousemove', function (e) {
+                removeElements(document.getElementsByClassName("overlay"))
+                showOverlay(e.pageX, e.pageY, 400, 250)
+                console.log("patate")
+            })
+            div.addEventListener('mouseout', removeElements.bind(null,
+                document.getElementsByClassName("overlay")))
+
+            // Build the page
+            div.appendChild(img)
+            div.appendChild(h3)
+            document.getElementById(p.type).appendChild(div)
         });
+    }
+
+    function removeElements(elems) {
+        for (var i = 0, e; e = elems[i]; ++i) { e.parentElement.removeChild(e) }
+    }
+
+    function showOverlay(x, y, w, h) {
+        var overlay = document.createElement("div")
+        overlay.className = "overlay"
+        overlay.style.width = w + "px"
+        overlay.style.height = h + "px"
+        overlay.style.top = y + "px"
+        overlay.style.left = x + "px"
+        document.body.appendChild(overlay)
     }
 </script>
 
-
-<div id="ongoing">
-
+<div id="locked" class="project-wrapper">
+    <h2>Locked</h2>
 </div>
-
-<div id="locked">
-
+<div id="ongoing" class="project-wrapper">
+    <h2>Ongoing</h2>
 </div>
-
-<div id="unlocked">
-
+<div id="unlocked" class="project-wrapper">
+    <h2>Unlocked</h2>
 </div>

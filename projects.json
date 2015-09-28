@@ -1,5 +1,34 @@
 [
     {
-        "title": "temp"
+        "title": "Mostly Adequate Guide",
+        "date": "Summer 2015",
+        "description": "Lorem Ipsum",
+        "icon": "mostlyadequate.png",
+        "tools": "Markdown, Git",
+        "type": "ongoing"
+    },
+    {
+        "title": "Kattebel",
+        "date": "Summer 2015",
+        "description": "Lorem Ipsum",
+        "icon": "kattebel.png",
+        "tools": "Express.js, Parse, Android, iOS",
+        "type": "ongoing"
+    },
+    {
+        "title": "Moovup",
+        "date": "early 2013",
+        "description": "Lorem Ipsum",
+        "icon": "moovup.png",
+        "tools": "Ruby On Rails, PostgreSQL",
+        "type": "unlocked"
+    },
+    {
+        "title": "The Ocean Cleanup",
+        "date": "May 2015",
+        "description": "The Ocean Cleanup Description",
+        "icon": "theoceancleanup.png",
+        "tools": "Android, Titanium, Alloy",
+        "type": "unlocked"
     }
 ]
