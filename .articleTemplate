@@ -1,0 +1,14 @@
+---
+layout: post
+title:  @title@
+date:   @date@
+categories:
+cover: # Example : /img/article/cover.png
+author: Matthias Benkort
+---
+
+Article summary.
+
+<!--more-->
+
+Article detailed content.
