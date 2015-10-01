@@ -3,7 +3,7 @@ layout: post
 title:  @title@
 date:   @date@
 categories:
-cover: # Example : /img/article/cover.png
+cover: /img/articles//cover.jpg
 author: Matthias Benkort
 ---
 
