@@ -2,25 +2,36 @@
     {
         "title": "Mostly Adequate Guide",
         "date": "Summer 2015",
-        "description": "Lorem Ipsum",
+        "description": "A french translation of the 'Mostly Adequate Guide To Functional Programming' written by <strong>Dr.Boolean</strong>",
+        "link": "https://github.com/MostlyAdequate/mostly-adequate-guide-fr",
         "icon": "mostlyadequate.png",
-        "tools": "Markdown, Git",
-        "type": "ongoing"
+        "tools": ["Markdown", "Git"],
+        "type": "locked"
+    },
+    {
+        "title": "Soldier Z",
+        "date": "Summer 2015",
+        "description": "An attempt to build a complete and complexe game in browser among JavaScript technologies. The game is still in development and is probably one of the most challenging project I ever tried.",
+        "icon": "soldierz.png",
+        "tools": ["Express.js", "MongoDB", "Pixi.js", "Git"],
+        "type": "locked"
     },
     {
         "title": "Kattebel",
-        "date": "Summer 2015",
-        "description": "Lorem Ipsum",
+        "date": "7th of September",
+        "description": "Hackathon of one day at The Smiths. The idea was to build from scratch a smart watch application for both iOS and Android altogether with a little web app and a corresponding backend that feeds them all. I was in charge of the backend side built with Parse and Express.",
+        "link": "https://github.com/TheSmiths/Kattebel",
         "icon": "kattebel.png",
-        "tools": "Express.js, Parse, Android, iOS",
-        "type": "ongoing"
+        "tools": ["Express.js", "Parse", "Android", "iOS"],
+        "type": "unlocked"
     },
     {
         "title": "Moovup",
         "date": "early 2013",
-        "description": "Lorem Ipsum",
+        "description": "Moovup is a web-application on which I worked on during more or less eight months. I was working for the start-up on my free time, in order to help them to technically set-up their project.",
+        "link": "https://github.com/KtorZPersonal/Moovup",
         "icon": "moovup.png",
-        "tools": "Ruby On Rails, PostgreSQL",
+        "tools": ["Ruby On Rails", "PostgreSQL"],
         "type": "unlocked"
     },
     {
@@ -28,7 +39,7 @@
         "date": "May 2015",
         "description": "The Ocean Cleanup Description",
         "icon": "theoceancleanup.png",
-        "tools": "Android, Titanium, Alloy",
+        "tools": ["Android", "Titanium", "Alloy"],
         "type": "unlocked"
     }
 ]

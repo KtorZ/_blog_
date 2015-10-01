@@ -22,6 +22,11 @@ layout: default
     text-align: center;
     margin: 0 0 2em 0;
 }
+
+header.site-header {
+    margin-bottom: 2em;
+}
+
 .project-wrapper > h2 {
     font-size: 1.5em;
     margin: 0 0 0.5em 0;
@@ -29,9 +34,63 @@ layout: default
 
 .overlay {
     z-index: 10;
-    background: #1DB7FF;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
     position: absolute;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    transition: opacity 0.5s, height 0.7s, top 0.6s;
 }
+
+.bg-overlay {
+    z-index: 9;
+    background: #141414;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.overlay p {
+    padding: 0 1em;
+    font-size: 0.9em;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.overlay p.tools {
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 0.8em;
+    height: 10%;
+}
+
+.overlay h3 {
+    margin: 0.5em 0;
+    width: 100%;
+    height: 10%;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.overlay span {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.overlay a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 1em;
+}
+
 </style>
 
 <script>
@@ -54,13 +113,15 @@ layout: default
             div.className = "project"
 
             // Add listeners
-            div.addEventListener('mousemove', function (e) {
-                removeElements(document.getElementsByClassName("overlay"))
-                showOverlay(e.pageX, e.pageY, 400, 250)
-                console.log("patate")
+            div.addEventListener('click', function (e) {
+                var size = { width: 600, height: 300 },
+                    center = {
+                        x: 0.5 * (window.innerWidth - size.width) + window.pageXOffset || 0,
+                        y: 0.5 * (window.innerHeight - size.height) + window.pageYOffset || 0,
+                    }
+                removeOverlay()
+                showOverlay(center.x, center.y, size.width, size.height, p)
             })
-            div.addEventListener('mouseout', removeElements.bind(null,
-                document.getElementsByClassName("overlay")))
 
             // Build the page
             div.appendChild(img)
@@ -69,26 +130,63 @@ layout: default
         });
     }
 
-    function removeElements(elems) {
-        for (var i = 0, e; e = elems[i]; ++i) { e.parentElement.removeChild(e) }
+    function removeOverlay() {
+        function _clear(elems) {
+            for (var i = 0, e; e = elems[i]; ++i) { e.parentElement.removeChild(e) }
+        }
+
+        _clear(document.getElementsByClassName("overlay"))
+        _clear(document.getElementsByClassName("bg-overlay"))
     }
 
-    function showOverlay(x, y, w, h) {
-        var overlay = document.createElement("div")
+    function getMaxHeight() {
+        var b = document.body, h = document.documentElement
+        return Math.max(b.scrollHeight, b.offsetHeight, h.clientHeight, h.scrollHeight,
+            h.offsetHeight)
+    }
+
+    function showOverlay(x, y, w, h, content) {
+        var overlay = document.createElement("div"),
+            bg = document.createElement("div"),
+            tools = document.createElement("p"),
+            title = document.createElement("h3"),
+            description = document.createElement("p")
+
         overlay.className = "overlay"
-        overlay.style.width = w + "px"
-        overlay.style.height = h + "px"
-        overlay.style.top = y + "px"
+        bg.className = "bg-overlay"
+        tools.className = "tools"
+
+        tools.innerHTML = content.tools.join(", ")
+        title.innerHTML = content.title
+        description.innerHTML = "<span class='date'>(" + content.date + ")</span> " + content.description
+
+        if (content.link) {
+            description.innerHTML += "\n<a href='" + content.link + "'>see more</a>"
+        }
+
+        overlay.style.top = (y + h) + "px"
         overlay.style.left = x + "px"
+        overlay.style.width = w + "px"
+        bg.style.height = getMaxHeight() + "px"
+
+        overlay.appendChild(title)
+        overlay.appendChild(description)
+        overlay.appendChild(tools)
+        document.body.appendChild(bg)
         document.body.appendChild(overlay)
+
+        bg.addEventListener("click", removeOverlay)
+
+        setTimeout(function () {
+            overlay.style.opacity = 0.98
+            overlay.style.height = h + "px"
+            overlay.style.top = y + "px"
+        }, 50)
     }
 </script>
 
 <div id="locked" class="project-wrapper">
     <h2>Locked</h2>
-</div>
-<div id="ongoing" class="project-wrapper">
-    <h2>Ongoing</h2>
 </div>
 <div id="unlocked" class="project-wrapper">
     <h2>Unlocked</h2>
