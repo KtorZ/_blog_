@@ -6,7 +6,7 @@ url: "http://ktorz.github.io" # the base hostname & protocol for your site
 theme:
   # Meta
   title: KtorZ
-  description: "Sanctuary of thoughts, mainly about progamming." # used by search engines
+  description: "Sanctuary of thoughts, mainly about programming." # used by search engines
 
   # Header and footer text
   header_text: >
