@@ -28,7 +28,7 @@ insights; All of that surrounded by other passionate developers and great folks.
 - Sharing and communicating ought to be our top priority.
 - One doesn't need a lot to succeed; common sense and hard work are usually enough.
 - The more I learn, the more I see how much I still have to learn.
-- We need art like music, cinema or painting because this what makes us feel human. I do need
+- We need art like music, cinema or painting because this is what makes us feel human. I do need
   music, a lot.
 - I do things because I am happy doing so, not because an occult force is pushing me to.
 - I strive to keep my expectations about my work higher than the average people such that if I
