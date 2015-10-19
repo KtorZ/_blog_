@@ -11,6 +11,7 @@ permalink: /references/
 ![][J] [Javascript <3 Unicode](https://vimeo.com/76597193)  
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
+![][J] [Classical Inheritance Is Obsolete](https://vimeo.com/69255635)  
 
 ##### Articles & Blog Posts
 
@@ -21,6 +22,8 @@ permalink: /references/
 ![][J] [Seven JavaScript Quirks I Wish I'd Know About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)  
 ![][J] [A Cartoon Guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
 ![][O] [The Secret Developers of the Video Game Industry](http://www.polygon.com/2015/9/30/9394355/the-secret-developers-of-the-video-game-industry)  
+![][ML] [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
+
 
 ##### Books
 
@@ -54,6 +57,7 @@ permalink: /references/
 ![][J] [Testable JavaScript](https://www.youtube.com/watch?v=JjqKQ8ezwKQ)  
 ![][J] [Speed Up Your JavaScript](https://www.youtube.com/watch?v=mHtdZgou0q)  
 ![][F] [Functional Programming Patterns for Non-mathematician](https://www.youtube.com/watch?v=AvgwKjTPMmM)  
+![][F] [Lenses Quick n' Dirty](https://vimeo.com/104807358)  
 
 ##### Articles & Blog posts
 
@@ -76,6 +80,7 @@ permalink: /references/
 ![][J] [The Two Pillars of JavaScript](https://medium.com/javascript-scene/the-two-pillars-of-javascript-ee6f3281e7f3)  
 ![][J] [Seven Surprising JavaScript 'Features'](http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html)  
 ![][O] [Effective Learning Strategies for Programmers](http://akaptur.com/blog/2015/10/10/effective-learning-strategies-for-programmers/)  
+![][SI] [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)  
 
 ##### Questions & Answers
 
