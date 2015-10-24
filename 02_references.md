@@ -23,6 +23,8 @@ permalink: /references/
 ![][J] [A Cartoon Guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
 ![][O] [The Secret Developers of the Video Game Industry](http://www.polygon.com/2015/9/30/9394355/the-secret-developers-of-the-video-game-industry)  
 ![][ML] [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
+![][J] [Want to Learn JavaScript in 2015 / 2016?](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225#.7hqqz155b)  
+![][SI] [How Does HTTPS Actually Work?](http://robertheaton.com/2014/03/27/how-does-https-actually-work/)  
 
 
 ##### Books
@@ -35,6 +37,9 @@ permalink: /references/
 ![][J] [Learning JavaScript Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)  
 ![][ML] [Recurrent Neural Networks Tutorial](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/)  
 ![][O] [Learn Enough Command Line to Be Dangerous](https://www.learnenough.com/command-line-tutorial)  
+![][SI] [Philosophy of Computer Science](http://www.cse.buffalo.edu/~rapaport/Papers/phics.pdf)  
+![][SI] [Architecture Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)  
+![][SI] [X.509 Certificates, A Tutorial for Android](https://www.msec.be/secureapps/seminarie/msec_x509_android.pdf)  
 
 ### Things that are indeed interesting
 
@@ -57,7 +62,11 @@ permalink: /references/
 ![][J] [Testable JavaScript](https://www.youtube.com/watch?v=JjqKQ8ezwKQ)  
 ![][J] [Speed Up Your JavaScript](https://www.youtube.com/watch?v=mHtdZgou0q)  
 ![][F] [Functional Programming Patterns for Non-mathematician](https://www.youtube.com/watch?v=AvgwKjTPMmM)  
-![][F] [Lenses Quick n' Dirty](https://vimeo.com/104807358)  
+![][F] [Lenses Quick n' Dirty](https://vimeo.com/104807358)   
+![][J] [Building Hybrid and Mobile Apps With React.js](https://www.youtube.com/watch?v=ambaf-MI6R4)  
+![][J] [Using ECMAScript 6 Today: Part I](https://www.youtube.com/watch?v=Fg3bEZIcnUw)   
+![][J] [Using EMCAScript 6 Today: Part II](https://www.youtube.com/watch?v=Vhhq1WpzsnM)  
+
 
 ##### Articles & Blog posts
 
@@ -81,6 +90,7 @@ permalink: /references/
 ![][J] [Seven Surprising JavaScript 'Features'](http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html)  
 ![][O] [Effective Learning Strategies for Programmers](http://akaptur.com/blog/2015/10/10/effective-learning-strategies-for-programmers/)  
 ![][SI] [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)  
+![][J] [You're Missing the Point With Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)  
 
 ##### Questions & Answers
 
