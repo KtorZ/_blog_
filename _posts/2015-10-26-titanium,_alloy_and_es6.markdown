@@ -8,7 +8,7 @@ author: Matthias Benkort
 ---
 
 ES6 is not only about syntactic sugars in your code, It also includes a lot of interesting
-features and flow control tools like destructuring and promises. It makes functionnal
+features and flow control tools like destructuring and promises. It makes functional
 programming even more pleasant in JavaScript and thus we ought to use it with *Alloy*.
 
 <!--more-->
@@ -17,7 +17,8 @@ There is already an existing solution that can be used for *Titanium* classic ap
 [ti.babel](https://github.com/dawsontoth/ti.babel). It is using, as I will do, the power of
 [Babel](https://babeljs.io/) to transcompile all *Titanium* ES6 sources to a compatible ES5
 version for the app. So, let's dive into it and see how to make the thing works with *Alloy*.
-### Prerequisite
+
+### Prerequisites
 
 First of all, we'll need some artifacts but do not worry, `npm` is as usual our devoted friend.
 
@@ -32,7 +33,7 @@ order to do synchronous `exec`)
 ### Create destination folder
 
 Assuming we're now in a *Titanium* root project folder (the one that has the `tiapp.xml` file).
-In order to compile without disturbing the existing sources, we will ask babel to transcompile
+In order to compile without disturbing the existing sources, we will ask *Babel* to transcompile
 the project `app/` folder into a new one, let's call it `.app/` so it is hidden and nobody
 cares about what is happening with this one. In that folder, add three folders `controllers`
 and `lib/babel`. Then, put a blank file `index.js` within the folder `controllers` (this is the
@@ -48,7 +49,7 @@ browserify $(npm config get prefix)/lib/node_modules/babel-core/polyfill.js -o
 .app/lib/babel/polyfill.js
 {% endhighlight %}
 
-Great, now, let's creaste a little hook for *Alloy* using an *alloy.jmk* file. We'll put a hook
+Great, now, let's create a little hook for *Alloy* using an *alloy.jmk* file. We'll put a hook
 before alloy compilation to transcompile all our original sources to something ES5-compatible.
 So, create an `alloy.jmk` and place it into the `.app` folder with the following content:
 
@@ -65,24 +66,29 @@ task("pre:compile", function (e, log) {
     // Babel everything
     if (process.env.ALLOY_APP_DIR && process.env.ALLOY_APP_DIR !== 'app') {
         log.info("Transcompiling to ES5");
+        // First of all, erase previous compilation but index.js and cie.
         exec('find ' + e.dir.home +
             ' ! -name "alloy.jmk"' +
             ' ! -path "' + path.join(e.dir.home, 'controllers', 'index.js') + '"' +
             ' ! -path "' + path.join(e.dir.home, 'lib', 'babel', 'polyfill.js') + '"' +
             ' -type f -delete');
+        // Remove empty folders
         exec('find ' + e.dir.home + ' -empty -type d -delete');
+        // And copy the current app into the future app folder for Alloy
         exec('cp -r ' + babelSrc + ' ' + e.dir.home);
 
+        // Add a little line to alloy.js in order to include Polyfill
         var content = fs.readFileSync(alloy);
         content = 'require("babel/polyfill");\n' + content;
         fs.writeFileSync(alloy, content);
 
+        // And finally, transcompile with Babel
         exec('babel ' + e.dir.home + ' --out-dir ' + e.dir.home);
     }
 });
 {% endhighlight %}
 
-So, the *Titanium* project now basically have this kind of strucure:
+So, the *Titanium* project now basically has this kind of structure:
 
 {% highlight bash %}
 .
@@ -112,6 +118,11 @@ Now, this is the tricky part. We need to make *Alloy* think that the correct app
 is `.app/` and not `app/`. To do so, we'll need to edit *Alloy*'s source files (we'll see about
 a Pull Request maybe?).
 
+Incidentally, everything could be easier and simplified if we were working in a separate
+folder, using the *Alloy.jmk* to copy and transcompile our source into the original `app/`
+folder. However in order to use all other *Alloy* features like scaffolding and also to keep a
+common folder architecture, those small hacks into *Alloy* plugins are - to me - worth it.
+
 So, let's find the *Alloy* installation, usually `/usr/local/lib/node_modules/alloy/` and open
 the file `Alloy/commands/compile/index.js`.
 
@@ -136,8 +147,8 @@ module.exports = function(args, program) {
 +    }
 {% endhighlight %}
 
-And, we're almost done! Because *Alloy* is a bit messy sometimes ^.^, there is another little
-line to fix, around line `250`, find the line that refers to `CONST.ALLOY_DIR` and change it
+We're almost done! Because *Alloy* is a bit messy sometimes ^.^, there is another little
+line to fix, around line `250`, find the one that refers to `CONST.ALLOY_DIR` and change it
 for our `paths.app` like this: 
 
 {% highlight javascript %}
