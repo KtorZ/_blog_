@@ -97,6 +97,7 @@ permalink: /references/
 ![][J] [What Does the Exclamation Mark Do Before the Function](http://stackoverflow.com/questions/3755606/what-does-the-exclamation-mark-do-before-the-function)  
 ![][J] [10 Interview Questions Every JavaScript Developer Should
 Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)  
+![][F] [Why is Haskell Considered Such a Nice and Great Language Yet is Not Being Used?](https://www.quora.com/Why-is-Haskell-considered-such-a-nice-and-great-language-yet-is-not-being-used)  
 
 ##### Books
 
