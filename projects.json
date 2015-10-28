@@ -37,8 +37,9 @@
     {
         "title": "The Ocean Cleanup",
         "date": "May 2015",
-        "description": "The Ocean Cleanup Description",
+        "description": "Bug fix,  port from iOS to Android and complete features on the app (Notifications, GPS tracking). The app takes place in The Ocean CleanUp project in order to give people on boat a way to constitute a set of exploitable data.",
         "icon": "theoceancleanup.png",
+        "link": "https://github.com/TheOceanCleanup/App",
         "tools": ["Android", "Titanium", "Alloy"],
         "type": "unlocked"
     }
