@@ -11,7 +11,6 @@ permalink: /references/
 ![][J] [Javascript <3 Unicode](https://vimeo.com/76597193)  
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
-![][J] [Classical Inheritance Is Obsolete](https://vimeo.com/69255635)  
 
 ##### Articles & Blog Posts
 
@@ -91,6 +90,8 @@ permalink: /references/
 ![][O] [Effective Learning Strategies for Programmers](http://akaptur.com/blog/2015/10/10/effective-learning-strategies-for-programmers/)  
 ![][SI] [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)  
 ![][J] [You're Missing the Point With Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)  
+![][G] [Packing Resources Into Go QML Binaries](http://blog.labix.org/2014/09/26/packing-resources-into-go-qml-binaries)  
+
 
 ##### Questions & Answers
 
@@ -98,6 +99,8 @@ permalink: /references/
 ![][J] [10 Interview Questions Every JavaScript Developer Should
 Know](https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95)  
 ![][F] [Why is Haskell Considered Such a Nice and Great Language Yet is Not Being Used?](https://www.quora.com/Why-is-Haskell-considered-such-a-nice-and-great-language-yet-is-not-being-used)  
+![][SI] [What Are The Best Kept Secrets of Great Programmers](https://www.quora.com/What-are-the-best-kept-secrets-of-great-programmers/answer/Jens-Rantil?srid=tsOh&share=1)  
+![][SI] [Difference Between git checkout filename And git checkout -- filename](http://stackoverflow.com/questions/6561142/difference-between-git-checkout-filename-and-git-checkout-filename)   
 
 ##### Books
 
@@ -114,6 +117,7 @@ Thought](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/19
 
 
 [J]: /img/puce_javascript.svg
+[G]: /img/puce_go.svg
 [SI]: /img/puce_engineering.svg
 [F]: /img/puce_functionnal.svg
 [M]: /img/puce_mathematics.svg
