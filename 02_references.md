@@ -11,11 +11,11 @@ permalink: /references/
 ![][J] [Javascript <3 Unicode](https://vimeo.com/76597193)  
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
+![][F] [Asynchronous Programming at Netflix](https://www.youtube.com/watch?v=gawmdhCNy-A&ab_channel=@Scale)  
 
 ##### Articles & Blog Posts
 
 ![][O] [The Making of Lemmings](http://readonlymemory.vg/the-making-of-lemmings/)  
-![][J] [The two pillars of javascript: part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)  
 ![][M] [Application Of Graph Theory](http://www.dharwadker.org/pirzada/applications/)  
 ![][ML] [Neural Networks, Types and Functional Programming](http://colah.github.io/posts/2015-09-NN-Types-FP/)  
 ![][J] [Seven JavaScript Quirks I Wish I'd Know About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)  
@@ -39,6 +39,7 @@ permalink: /references/
 ![][SI] [Philosophy of Computer Science](http://www.cse.buffalo.edu/~rapaport/Papers/phics.pdf)  
 ![][SI] [Architecture Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)  
 ![][SI] [X.509 Certificates, A Tutorial for Android](https://www.msec.be/secureapps/seminarie/msec_x509_android.pdf)  
+![][F] [General Theory of Reactivity](https://github.com/kriskowal/gtor)  
 
 ### Things that are indeed interesting
 
@@ -91,6 +92,7 @@ permalink: /references/
 ![][SI] [Best Practices for Designing a Pragmatic RESTful API](http://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)  
 ![][J] [You're Missing the Point With Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)  
 ![][G] [Packing Resources Into Go QML Binaries](http://blog.labix.org/2014/09/26/packing-resources-into-go-qml-binaries)  
+![][J] [The two pillars of javascript: part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)  
 
 
 ##### Questions & Answers
