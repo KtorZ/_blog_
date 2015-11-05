@@ -24,6 +24,7 @@ permalink: /references/
 ![][ML] [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
 ![][J] [Want to Learn JavaScript in 2015 / 2016?](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225#.7hqqz155b)  
 ![][SI] [How Does HTTPS Actually Work?](http://robertheaton.com/2014/03/27/how-does-https-actually-work/)  
+![][J] [ES6 in Depth](https://hacks.mozilla.org/category/es6-in-depth/)  
 
 
 ##### Books
@@ -93,6 +94,7 @@ permalink: /references/
 ![][J] [You're Missing the Point With Promises](https://blog.domenic.me/youre-missing-the-point-of-promises/)  
 ![][G] [Packing Resources Into Go QML Binaries](http://blog.labix.org/2014/09/26/packing-resources-into-go-qml-binaries)  
 ![][J] [The two pillars of javascript: part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)  
+![][G] [Everyday Hassles In Go](http://crufter.com/2014/12/01/everyday-hassles-in-go/)  
 
 
 ##### Questions & Answers
