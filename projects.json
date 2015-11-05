@@ -42,5 +42,14 @@
         "link": "https://github.com/TheOceanCleanup/App",
         "tools": ["Android", "Titanium", "Alloy"],
         "type": "unlocked"
+    },
+    {
+        "title": "ti.es6",
+        "date": "November 2015",
+        "description": "A Titanium plugin used to make Titanium & Alloy apps compatible with ES6",
+        "icon": "ties6.png",
+        "link": "https://www.npmjs.com/package/ti.es6",
+        "tools": ["Titanium", "Alloy", "Node.js"],
+        "type": "unlocked"
     }
 ]
