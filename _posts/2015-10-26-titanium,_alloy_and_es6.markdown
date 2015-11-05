@@ -13,6 +13,12 @@ programming even more pleasant in JavaScript and thus we ought to use it with *A
 
 <!--more-->
 
+> ##### EDIT 05th November 2015
+> I've now created a Titanium plugin available as an npm package which makes the process way
+> more convenient to use: [ti.es6](https://www.npmjs.com/package/ti.es6)   
+
+
+
 There is already an existing solution that can be used for *Titanium* classic apps:
 [ti.babel](https://github.com/dawsontoth/ti.babel). It is using, as I will do, the power of
 [Babel](https://babeljs.io/) to transcompile all *Titanium* ES6 sources to a compatible ES5
