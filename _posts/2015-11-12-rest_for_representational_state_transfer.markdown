@@ -21,12 +21,12 @@ to hereby put forward.
 <!--more-->
 
 ## Pre-requisite
-First of all, we assume that any communication between the server and the client is done
+First of all, we assume that any communication between the server and the client are done
 through SSL using HTTPS. Thereby, communications are protected against man-in-middle attack and
 we can assume that information coming from a client are really coming from a trusty client.
 
 Also, in order to authenticate, client will have to provide credentials on a given endpoint.
-None of those credentials are directly stored in the database. The server would rather store an
+None of those credentials are directly stored in the database. The server would rather store a
 hash using a SHA-256 algorithm and a salt, also stored alongside the password. As a matter of
 fact no compromising and valuable information should be stored as is in the server. Encryption
 algorithms allow a one-way encryption.
@@ -35,8 +35,8 @@ algorithms allow a one-way encryption.
 In order to be stateless, the server has to provide an API that is idempotent and that does not
 rely on any kind of session or cookie mechanism. There is no idea of session on the server. The
 only thing that is stored is a given secret key known **only** by the server itself. That key
-is a single point of failure meaning that anyone owning it would be able to replicate the
-behavior of the server. However, the only way to get that key is by having a direct access on
+is a single point of failure meaning that anyone who owns it would be able to replicate the
+behavior of the server. However, the only way to get that key is by having direct access on
 the server. In such a case, we're in any scenario completely screwed. Also, The server should
 be able to renew this secret key periodically. The previous key has to be kept in memory until
 it becomes useless (after a delay greater than the expiration delay of the last created
@@ -112,14 +112,14 @@ is more than insignifiant.
 
 ### Which one?
 
-Both strategies are equivalent to me. However, the second one allow the client to transfer only
+Both strategies are equivalent to me. However, the second one allows the client to transfer only
 one piece of information which could seemly be placed in the `Authorization` HTTP header.
 Furthermore, this makes sense as this header was initially dedicated to that purpose. 
 
 ## Conclusion
 Having a RESTful API requires some constraints and standards to adopt. Also, the token's
 management is under the client responsability, meaning that if the client isn't secure then the
-app is compromised. Though this isn't inherent to that protocol. It would be the same with any
+app is compromised. Though, this isn't inherent to that protocol. It would be the same with any
 kind of authentication. This way of authentication and architecture gives nevertheless the
 opportunity to build a completely stateless RESTful API - awesome.
 
