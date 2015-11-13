@@ -3,7 +3,7 @@ layout: post
 title:  REST for Representational State Transfer
 date:   2015-11-12 17:08:57
 categories:
-cover: /img/articles//cover.jpg
+cover: /img/articles/rest_stateless/cover.png
 author: Matthias Benkort
 ---
 
@@ -106,7 +106,7 @@ The client would have to send the token through each request. Receiving the requ
 would try to decrypt the token and retrieve both the `uid` and the `expiration_date`. Also, it
 is recommended to associate the token to routes that are indeed refering to the user (either as
 a route identifier or as a concrete parameter of the request). Thereby, the server can check if
-the token is concording with the given user and prevent attacker from trying to send fake
+the token is matching the given user and prevent attacker from trying to send fake
 request with a randomly generated token even if the chance of generating a random valid token
 is more than insignifiant. 
 
