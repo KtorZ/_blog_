@@ -12,6 +12,7 @@ permalink: /references/
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
 ![][F] [Asynchronous Programming at Netflix](https://www.youtube.com/watch?v=gawmdhCNy-A&ab_channel=@Scale)  
+![][SI] [Git Happens](https://www.youtube.com/watch?v=Dv8I_kfrFWw)  
 
 ##### Articles & Blog Posts
 
@@ -23,8 +24,8 @@ permalink: /references/
 ![][O] [The Secret Developers of the Video Game Industry](http://www.polygon.com/2015/9/30/9394355/the-secret-developers-of-the-video-game-industry)  
 ![][ML] [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
 ![][J] [Want to Learn JavaScript in 2015 / 2016?](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225#.7hqqz155b)  
-![][SI] [How Does HTTPS Actually Work?](http://robertheaton.com/2014/03/27/how-does-https-actually-work/)  
 ![][J] [ES6 in Depth](https://hacks.mozilla.org/category/es6-in-depth/)  
+![][J] [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)  
 
 
 ##### Books
@@ -65,9 +66,10 @@ permalink: /references/
 ![][F] [Functional Programming Patterns for Non-mathematician](https://www.youtube.com/watch?v=AvgwKjTPMmM)  
 ![][F] [Lenses Quick n' Dirty](https://vimeo.com/104807358)   
 ![][J] [Building Hybrid and Mobile Apps With React.js](https://www.youtube.com/watch?v=ambaf-MI6R4)  
-![][J] [Using ECMAScript 6 Today: Part I](https://www.youtube.com/watch?v=Fg3bEZIcnUw)   
-![][J] [Using EMCAScript 6 Today: Part II](https://www.youtube.com/watch?v=Vhhq1WpzsnM)  
-
+![][J] [Using ECMAScript 6 Today: Part I](https://www.youtube.com/watch?v=Fg3bEZIcnUw)     
+![][J] [Using EMCAScript 6 Today: Part II](https://www.youtube.com/watch?v=Vhhq1WpzsnM)   
+![][G] [Twelve Go BestPractices](https://www.youtube.com/watch?v=8D3Vmm1BGoY)  
+![][SI] [REST From Hero to Zero in 45 Minutes](https://www.youtube.com/watch?v=_k60dxlMjZ4)  
 
 ##### Articles & Blog posts
 
@@ -95,7 +97,11 @@ permalink: /references/
 ![][G] [Packing Resources Into Go QML Binaries](http://blog.labix.org/2014/09/26/packing-resources-into-go-qml-binaries)  
 ![][J] [The two pillars of javascript: part 2](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4)  
 ![][G] [Everyday Hassles In Go](http://crufter.com/2014/12/01/everyday-hassles-in-go/)  
-
+![][SI] [How Does HTTPS Actually Work?](http://robertheaton.com/2014/03/27/how-does-https-actually-work/)  
+![][J] [A Cartoon Intro To Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)  
+![][J] [Full-Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html#what-you-will-need)  
+![][J] [How To Use npm As A Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)  
+![][SI] [oAuth2 Simplified](http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified)  
 
 ##### Questions & Answers
 
@@ -105,6 +111,7 @@ Know](https://medium.com/javascript-scene/10-interview-questions-every-javascrip
 ![][F] [Why is Haskell Considered Such a Nice and Great Language Yet is Not Being Used?](https://www.quora.com/Why-is-Haskell-considered-such-a-nice-and-great-language-yet-is-not-being-used)  
 ![][SI] [What Are The Best Kept Secrets of Great Programmers](https://www.quora.com/What-are-the-best-kept-secrets-of-great-programmers/answer/Jens-Rantil?srid=tsOh&share=1)  
 ![][SI] [Difference Between git checkout filename And git checkout -- filename](http://stackoverflow.com/questions/6561142/difference-between-git-checkout-filename-and-git-checkout-filename)   
+![][SI] [The Definitive Guide To Form-Based Website Authentication](http://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication)  
 
 ##### Books
 
