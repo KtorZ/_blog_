@@ -9,11 +9,12 @@
         "type": "locked"
     },
     {
-        "title": "Soldier Z",
-        "date": "Summer 2015",
-        "description": "An attempt to build a complete and complexe game in browser among JavaScript technologies. The game is still in development and is probably one of the most challenging project I ever tried.",
-        "icon": "soldierz.png",
-        "tools": ["Express.js", "MongoDB", "Pixi.js", "Git"],
+        "title": "Hexode",
+        "date": "November 2015",
+        "description": "A small JavaScript game to introduce myself to React and Redux before moving to a pure functional programming language",
+        "link": "https://github.com/KtorZPersonal/Hexode",
+        "icon": "hexode.png",
+        "tools": ["Express", "React", "Redux", "MongoDB"],
         "type": "locked"
     },
     {

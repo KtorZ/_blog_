@@ -1,0 +1,9 @@
+
+    {
+        "title": "Soldier Z",
+        "date": "Summer 2015",
+        "description": "An attempt to build a complete and complexe game in browser among JavaScript technologies. The game is still in development and is probably one of the most challenging project I ever tried.",
+        "icon": "soldierz.png",
+        "tools": ["Express.js", "MongoDB", "Pixi.js", "Git"],
+        "type": "locked"
+    },
