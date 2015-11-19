@@ -101,7 +101,8 @@ permalink: /references/
 ![][J] [A Cartoon Intro To Redux](https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6)  
 ![][J] [Full-Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html#what-you-will-need)  
 ![][J] [How To Use npm As A Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)  
-![][SI] [oAuth2 Simplified](http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified)  
+![][SI] [oAuth2 Simplified](http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified)   
+![][F] [Elm vs PureScript vs Haste](http://www.slant.co/topics/1515/compare/~elm_vs_purescript_vs_haste)  
 
 ##### Questions & Answers
 
