@@ -103,6 +103,8 @@ permalink: /references/
 ![][J] [How To Use npm As A Build Tool](http://blog.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/)  
 ![][SI] [oAuth2 Simplified](http://aaronparecki.com/articles/2012/07/29/1/oauth2-simplified)   
 ![][F] [Elm vs PureScript vs Haste](http://www.slant.co/topics/1515/compare/~elm_vs_purescript_vs_haste)  
+![][SI] [HiveMQ Blog about MQTT](http://www.hivemq.com/blog/mqtt/)   
+![][J] [Smart and Dumb Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)  
 
 ##### Questions & Answers
 
