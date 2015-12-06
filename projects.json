@@ -52,5 +52,22 @@
         "link": "https://www.npmjs.com/package/ti.es6",
         "tools": ["Titanium", "Alloy", "Node.js"],
         "type": "unlocked"
+    },
+    {
+        "title": "The Things Network",
+        "date": "December 2015",
+        "description": "Development of the network core architecture in Go. The network is a distributed open network for The Internet of Things, entirely open-sources.",
+        "icon": "ttn.png",
+        "link": "https://github.com/thethingsnetwork",
+        "tools": ["Go", "Docker", "Convey", "LoRa"],
+        "type": "locked"
+    },
+    {
+        "title": "References Archiver",
+        "date": "-",
+        "description": "Just a small script to automatically retrieve the content of an article or a video posted in my references section to prevent from content becoming unreachable.",
+        "icon": "archiver.png",
+        "tools": ["Git", "Bash"],
+        "type": "locked"
     }
 ]
