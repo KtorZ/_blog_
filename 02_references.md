@@ -13,6 +13,8 @@ permalink: /references/
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
 ![][F] [Asynchronous Programming at Netflix](https://www.youtube.com/watch?v=gawmdhCNy-A&ab_channel=@Scale)  
 ![][SI] [Git Happens](https://www.youtube.com/watch?v=Dv8I_kfrFWw)  
+![][SI] [TDD, as in Type-Directed Development](https://www.youtube.com/watch?v=iMITdKE4dys&ab_channel=JavaDay)   
+![][J] [Minimal API Surface Area](https://www.youtube.com/watch?v=4anAwXYqLG8&ab_channel=JSConf)  
 
 ##### Articles & Blog Posts
 
@@ -26,6 +28,13 @@ permalink: /references/
 ![][J] [Want to Learn JavaScript in 2015 / 2016?](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225#.7hqqz155b)  
 ![][J] [ES6 in Depth](https://hacks.mozilla.org/category/es6-in-depth/)  
 ![][J] [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)  
+![][SI] [Patronizing Passwords](http://joelcalifa.com/blog/patronizing-passwords/)   
+![][O] [Internet of Things Protocols & Standards](http://postscapes.com/internet-of-things-protocols)  
+![][O] [What is  LoRaWAN?](http://www.link-labs.com/what-is-lorawan/)  
+![][J] [Styling React Components in Sass](http://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/)  
+![][O] [Animated SVG vs GIF](http://sarasoueidan.com/blog/svg-vs-gif/)  
+![][J] [Awesome Redux](https://github.com/xgrommx/awesome-redux)  
+![][J] [Why FluxComponent > FluxMixin](https://github.com/acdlite/flummox/blob/v3.5.1/docs/docs/guides/why-flux-component-is-better-than-flux-mixin.md)  
 
 
 ##### Books
@@ -70,6 +79,7 @@ permalink: /references/
 ![][J] [Using EMCAScript 6 Today: Part II](https://www.youtube.com/watch?v=Vhhq1WpzsnM)   
 ![][G] [Twelve Go BestPractices](https://www.youtube.com/watch?v=8D3Vmm1BGoY)  
 ![][SI] [REST From Hero to Zero in 45 Minutes](https://www.youtube.com/watch?v=_k60dxlMjZ4)  
+![][G] [7 Common Mistakes in Go and How to Avoid Them](https://www.youtube.com/watch?v=29LLRKIL_TI&ab_channel=HakkaLabs)   
 
 ##### Articles & Blog posts
 
@@ -105,6 +115,13 @@ permalink: /references/
 ![][F] [Elm vs PureScript vs Haste](http://www.slant.co/topics/1515/compare/~elm_vs_purescript_vs_haste)  
 ![][SI] [HiveMQ Blog about MQTT](http://www.hivemq.com/blog/mqtt/)   
 ![][J] [Smart and Dumb Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)  
+![][J] [Do Not Forget to Use gzip For Express](http://inspiredjw.com/do-not-forget-to-use-gzip-for-express/)  
+![][SI] [I Want to Be a More Efficient Developer](http://blog.romainpellerin.eu/i-want-to-be-a-more-efficient-developer.html)  
+![][F] [The Category Design Pattern](http://www.haskellforall.com/2012/08/the-category-design-pattern.html)  
+![][F] [The Functor Design Pattern](http://www.haskellforall.com/2012/09/the-functor-design-pattern.html)   
+![][J] [Redux Best Practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e#.e10mae321)  
+![][SI] [Pattern: Backends For Frontends](http://samnewman.io/patterns/architectural/bff/)   
+![][G] [Go, REST APIs, and Pointers](https://willnorris.com/2014/05/go-rest-apis-and-pointers)   
 
 ##### Questions & Answers
 
@@ -115,6 +132,8 @@ Know](https://medium.com/javascript-scene/10-interview-questions-every-javascrip
 ![][SI] [What Are The Best Kept Secrets of Great Programmers](https://www.quora.com/What-are-the-best-kept-secrets-of-great-programmers/answer/Jens-Rantil?srid=tsOh&share=1)  
 ![][SI] [Difference Between git checkout filename And git checkout -- filename](http://stackoverflow.com/questions/6561142/difference-between-git-checkout-filename-and-git-checkout-filename)   
 ![][SI] [The Definitive Guide To Form-Based Website Authentication](http://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication)  
+![][O] [How to Create Animated GIF Images of a Screencast](http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast)  
+![][SI] [What Are Some Real Life Example of Design Patterns](http://stackoverflow.com/questions/36129/what-are-some-real-life-examples-of-design-patterns-used-in-software)
 
 ##### Books
 
@@ -127,7 +146,8 @@ Thought](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/19
 ![][ML] [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)  
 ![][SI] [Game Programming Patterns](http://gameprogrammingpatterns.com)  
 ![][F] [Learn You Haskell](http://learnyouahaskell.com)   
-![][O] [The Little Printf](http://ferd.ca/the-little-printf.html)
+![][O] [The Little Printf](http://ferd.ca/the-little-printf.html)  
+![][SI] [Learn X in Y minutes](https://learnxinyminutes.com/)  
 
 
 [J]: /img/puce_javascript.svg
