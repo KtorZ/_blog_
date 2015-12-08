@@ -12,7 +12,6 @@ permalink: /references/
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
 ![][F] [Asynchronous Programming at Netflix](https://www.youtube.com/watch?v=gawmdhCNy-A&ab_channel=@Scale)  
-![][SI] [Git Happens](https://www.youtube.com/watch?v=Dv8I_kfrFWw)  
 ![][SI] [TDD, as in Type-Directed Development](https://www.youtube.com/watch?v=iMITdKE4dys&ab_channel=JavaDay)   
 ![][J] [Minimal API Surface Area](https://www.youtube.com/watch?v=4anAwXYqLG8&ab_channel=JSConf)  
 
@@ -80,6 +79,7 @@ permalink: /references/
 ![][G] [Twelve Go BestPractices](https://www.youtube.com/watch?v=8D3Vmm1BGoY)  
 ![][SI] [REST From Hero to Zero in 45 Minutes](https://www.youtube.com/watch?v=_k60dxlMjZ4)  
 ![][G] [7 Common Mistakes in Go and How to Avoid Them](https://www.youtube.com/watch?v=29LLRKIL_TI&ab_channel=HakkaLabs)   
+![][G] [Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs&ab_channel=GoogleDevelopers)   
 
 ##### Articles & Blog posts
 
