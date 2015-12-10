@@ -1,0 +1,45 @@
+---
+layout: post
+title:  How to Git?
+date:   2015-12-10 08:53:00
+cover: /img/articles//cover.jpg
+author: Matthias Benkort
+---
+
+Article summary.
+
+<!--more-->
+
+#### ... change the last commit
+
+```
+git add ...
+git commit --amend -C HEAD
+``` 
+
+Incidentally, `-C` option (as well as `-c` that also let you edit the message) can be used to
+re-use any any commit's message you wish. By giving it `HEAD`, we just ask for the last one. 
+
+#### ... change the last commit's message
+
+```
+git add [whatever]
+git commit --amend -m "<whatever>"
+```
+
+#### ... rebase and preserve commit dates
+
+```
+git rebase --onto <newbase> <branch> <upstream>
+git rebase --committer-date-is-author-date <newbase>
+```
+
+By default, a `git rebase` does not overwrite the author dates. Thus, after having perform the
+rebase, one can still ask git to rewrite all commit dates and make them match their author
+
+#### ... make an empty commit
+
+```
+git commit --allow-empty -m "<whatever>"
+```
+
