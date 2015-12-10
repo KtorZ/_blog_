@@ -43,3 +43,13 @@ rebase, one can still ask git to rewrite all commit dates and make them match th
 git commit --allow-empty -m "<whatever>"
 ```
 
+#### ... change message of a set of commits
+
+```
+git filter-branch --msg-filter 'echo "<whatever> $(cat)"' <branch>...<REF_LIMIT>
+```
+
+Here, `$(cat)` prints the previous commit message such that we can append or prepend elements
+to that message. Also, by default (without `<branch>...<REF_LIMIT>`), the transformation will
+apply to the entire branch. By specifying a `REF_LIMIT`, which is a commit ref, it is possible
+to stop the process on that specified commit (exclusive, the `REF_LIMIT` isn't affected).
