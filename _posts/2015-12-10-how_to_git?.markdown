@@ -68,7 +68,7 @@ git filter-branch --env-filter \
 Git supports several date format, for instance: `dd.mm.aaaaThh:mm` is one of them and is
 seemingly handy.
 
-#### ... how to import only a subdirectory of an existing repository 
+#### ... import only a subdirectory of an existing repository 
 
 ```
 git config core.sparsecheckout true
@@ -77,7 +77,29 @@ git fetch <whatever-remote>
 git read-tree -mu <whatever-remote>/<whatever-branch>
 ```
 
+#### ... excludes some files by default, always
 
+Create a global `.gitignore`, somewhere in a safe and soft place:
 
+**.gitignore**
+```
+.DS_Store
+Thumbs.db
 
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+```
 
+And, either modify your `.gitconfig` if any, or use the CLI directly:
+
+```
+git config global core.excludesfile=/path/to/.gitignore
+```
+
+Files such as buffers created by vim shouldn't be present in a project `.gitignore`. This
+should semantically be related to the project itself, not to the tools or IDE one's using.
