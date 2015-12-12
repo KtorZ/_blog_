@@ -68,4 +68,16 @@ git filter-branch --env-filter \
 Git supports several date format, for instance: `dd.mm.aaaaThh:mm` is one of them and is
 seemingly handy.
 
+#### ... how to import only a subdirectory of an existing repository 
+
+```
+git config core.sparsecheckout true
+echo whatever/subdirectory >> .git/info/sparse-checkout
+git fetch <whatever-remote>
+git read-tree -mu <whatever-remote>/<whatever-branch>
+```
+
+
+
+
 
