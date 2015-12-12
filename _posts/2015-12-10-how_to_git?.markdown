@@ -53,3 +53,19 @@ Here, `$(cat)` prints the previous commit message such that we can append or pre
 to that message. Also, by default (without `<branch>...<REF_LIMIT>`), the transformation will
 apply to the entire branch. By specifying a `REF_LIMIT`, which is a commit ref, it is possible
 to stop the process on that specified commit (exclusive, the `REF_LIMIT` isn't affected).
+
+#### ... change the commit date of a previous commit
+
+```
+git filter-branch --env-filter \
+'if [ $GIT_COMMIT = <whatever_commit_hash> ]
+ then
+ export GIT_AUTHOR_DATE=<whatever_date>
+ export GIT_COMMITTER_DATE=<whatever_date>
+ fi'
+```
+
+Git supports several date format, for instance: `dd.mm.aaaaThh:mm` is one of them and is
+seemingly handy.
+
+
