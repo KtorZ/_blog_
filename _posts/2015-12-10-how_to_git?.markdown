@@ -2,37 +2,52 @@
 layout: post
 title:  How to Git?
 date:   2015-12-10 08:53:00
-cover: /img/articles//cover.jpg
+cover: /img/articles/how_to_git/cover.png
 author: Matthias Benkort
 ---
 
-Article summary.
+Another cookbook about git. I hereby expose some recipes I encounter quite often. 
 
-<!--more-->
+### Summary
+
+How to...
+
+- [change the last commit](#-change-the-last-commit)
+- [change the last commit message](#-change-the-last-commit-message)
+- [rebase and preserve commit dates](#-rebase-and-preserve-commit-dates)
+- [make an empty commit](#-make-an-empty-commit)
+- [change messages of a set of commits](#-change-messages-of-a-set-of-commits)
+- [change the commit date of an old commit](#-change-the-commit-date-of-an-old-commit)
+- [import only a subdirectory of an existing repository](#-import-only-a-subdirectory-of-an-existing-repository)
+- [excludes some files by default, always](#-excludes-some-files-by-default-always)
+- [show all commits related to a specific file](#-show-all-commits-related-to-a-specific-file)
+
+
+### Recipes
 
 #### ... change the last commit
 
-```
+{% highlight bash %}
 git add ...
 git commit --amend -C HEAD
-``` 
+{% endhighlight %}
 
 Incidentally, `-C` option (as well as `-c` that also let you edit the message) can be used to
 re-use any any commit's message you wish. By giving it `HEAD`, we just ask for the last one. 
 
-#### ... change the last commit's message
+#### ... change the last commit message
 
-```
+{% highlight bash %}
 git add [whatever]
 git commit --amend -m "<whatever>"
-```
+{% endhighlight %}
 
 #### ... rebase and preserve commit dates
 
-```
+{% highlight bash %}
 git rebase --onto <newbase> <branch> <upstream>
 git rebase --committer-date-is-author-date <newbase>
-```
+{% endhighlight %}
 
 By default, a `git rebase` does not overwrite the author dates. Thus, after having perform the
 rebase, one can still ask git to rewrite all commit dates and make them match their author
@@ -43,7 +58,7 @@ rebase, one can still ask git to rewrite all commit dates and make them match th
 git commit --allow-empty -m "<whatever>"
 ```
 
-#### ... change message of a set of commits
+#### ... change messages of a set of commits
 
 ```
 git filter-branch --msg-filter 'echo "<whatever> $(cat)"' <branch>...<REF_LIMIT>
@@ -54,7 +69,7 @@ to that message. Also, by default (without `<branch>...<REF_LIMIT>`), the transf
 apply to the entire branch. By specifying a `REF_LIMIT`, which is a commit ref, it is possible
 to stop the process on that specified commit (exclusive, the `REF_LIMIT` isn't affected).
 
-#### ... change the commit date of a previous commit
+#### ... change the commit date of an old commit
 
 ```
 git filter-branch --env-filter \
@@ -103,3 +118,12 @@ git config global core.excludesfile=/path/to/.gitignore
 
 Files such as buffers created by vim shouldn't be present in a project `.gitignore`. This
 should semantically be related to the project itself, not to the tools or IDE one's using.
+
+#### ... show all commits related to a specific file
+
+```
+git log --follow <whatever-file>
+```
+
+The `-p` option might be added to also show the content of each commit and to thereby give an
+overview of all changes that lead to the current file content.
