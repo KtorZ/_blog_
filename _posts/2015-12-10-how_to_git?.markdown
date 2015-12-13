@@ -8,7 +8,7 @@ author: Matthias Benkort
 
 Another cookbook about git. I hereby expose some recipes I encounter quite often. 
 
-### Summary
+## Summary
 
 How to...
 
@@ -23,9 +23,9 @@ How to...
 - [show all commits related to a specific file](#-show-all-commits-related-to-a-specific-file)
 
 
-### Recipes
+## Recipes
 
-#### ... change the last commit
+### ... change the last commit
 
 {% highlight bash %}
 git add ...
@@ -42,7 +42,7 @@ git add [whatever]
 git commit --amend -m "<whatever>"
 {% endhighlight %}
 
-#### ... rebase and preserve commit dates
+### ... rebase and preserve commit dates
 
 {% highlight bash %}
 git rebase --onto <newbase> <branch> <upstream>
@@ -52,52 +52,58 @@ git rebase --committer-date-is-author-date <newbase>
 By default, a `git rebase` does not overwrite the author dates. Thus, after having perform the
 rebase, one can still ask git to rewrite all commit dates and make them match their author
 
-#### ... make an empty commit
+### ... make an empty commit
 
-```
+{% highlight bash %}
 git commit --allow-empty -m "<whatever>"
-```
+{% endhighlight %}
 
-#### ... change messages of a set of commits
+### ... change messages of a set of commits
 
-```
+
+{% highlight bash %}
 git filter-branch --msg-filter 'echo "<whatever> $(cat)"' <branch>...<REF_LIMIT>
-```
+
+{% endhighlight %}
 
 Here, `$(cat)` prints the previous commit message such that we can append or prepend elements
 to that message. Also, by default (without `<branch>...<REF_LIMIT>`), the transformation will
 apply to the entire branch. By specifying a `REF_LIMIT`, which is a commit ref, it is possible
 to stop the process on that specified commit (exclusive, the `REF_LIMIT` isn't affected).
 
-#### ... change the commit date of an old commit
+### ... change the commit date of an old commit
 
-```
+
+{% highlight bash %}
 git filter-branch --env-filter \
 'if [ $GIT_COMMIT = <whatever_commit_hash> ]
  then
  export GIT_AUTHOR_DATE=<whatever_date>
  export GIT_COMMITTER_DATE=<whatever_date>
  fi'
-```
+{% endhighlight %}
 
 Git supports several date format, for instance: `dd.mm.aaaaThh:mm` is one of them and is
 seemingly handy.
 
-#### ... import only a subdirectory of an existing repository 
+### ... import only a subdirectory of an existing repository 
 
-```
+
+{% highlight bash %}
 git config core.sparsecheckout true
 echo whatever/subdirectory >> .git/info/sparse-checkout
 git fetch <whatever-remote>
 git read-tree -mu <whatever-remote>/<whatever-branch>
-```
+{% endhighlight %}
 
-#### ... excludes some files by default, always
+### ... excludes some files by default, always
 
 Create a global `.gitignore`, somewhere in a safe and soft place:
 
 **.gitignore**
-```
+
+{% highlight bash %}
+
 .DS_Store
 Thumbs.db
 
@@ -108,22 +114,25 @@ Thumbs.db
 Session.vim
 .netrwhist
 *~
-```
+
+{% endhighlight %}
 
 And, either modify your `.gitconfig` if any, or use the CLI directly:
 
-```
+
+{% highlight bash %}
 git config global core.excludesfile=/path/to/.gitignore
-```
+{% endhighlight %}
 
 Files such as buffers created by vim shouldn't be present in a project `.gitignore`. This
 should semantically be related to the project itself, not to the tools or IDE one's using.
 
-#### ... show all commits related to a specific file
+### ... show all commits related to a specific file
 
-```
+
+{% highlight bash %}
 git log --follow <whatever-file>
-```
+{% endhighlight %}
 
 The `-p` option might be added to also show the content of each commit and to thereby give an
 overview of all changes that lead to the current file content.
