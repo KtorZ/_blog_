@@ -6,7 +6,8 @@ cover: /img/articles/how_to_git/cover.png
 author: Matthias Benkort
 ---
 
-Another cookbook about git. I hereby expose some recipes I encounter quite often. 
+Another cookbook about git. I hereby expose some recipes I encounter quite often. This post is
+likely to evolve in the future and to be completed on purpose.
 
 ## Summary
 
