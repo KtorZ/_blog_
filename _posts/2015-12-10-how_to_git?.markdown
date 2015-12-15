@@ -125,7 +125,7 @@ And, either modify your `.gitconfig` if any, or use the CLI directly:
 
 
 {% highlight bash %}
-git config global core.excludesfile=/path/to/.gitignore
+git config --global core.excludesfile=/path/to/.gitignore
 {% endhighlight %}
 
 Files such as buffers created by vim shouldn't be present in a project `.gitignore`. This
