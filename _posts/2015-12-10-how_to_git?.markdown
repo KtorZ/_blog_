@@ -13,16 +13,16 @@ likely to evolve in the future and to be completed on purpose.
 
 How to...
 
-- [change the last commit](#-change-the-last-commit)
-- [change the last commit message](#-change-the-last-commit-message)
-- [rebase and preserve commit dates](#-rebase-and-preserve-commit-dates)
-- [make an empty commit](#-make-an-empty-commit)
-- [change messages of a set of commits](#-change-messages-of-a-set-of-commits)
-- [change the commit date of an old commit](#-change-the-commit-date-of-an-old-commit)
-- [import only a subdirectory of an existing repository](#-import-only-a-subdirectory-of-an-existing-repository)
-- [excludes some files by default, always](#-excludes-some-files-by-default-always)
-- [show all commits related to a specific file](#-show-all-commits-related-to-a-specific-file)
-- [make git cli get rid of small typos](#-make-git-cli-get-rid-of-small-typos)
+- [change the last commit](#change-the-last-commit)
+- [change the last commit message](#change-the-last-commit-message)
+- [rebase and preserve commit dates](#rebase-and-preserve-commit-dates)
+- [make an empty commit](#make-an-empty-commit)
+- [change messages of a set of commits](#change-messages-of-a-set-of-commits)
+- [change the commit date of an old commit](#change-the-commit-date-of-an-old-commit)
+- [import only a subdirectory of an existing repository](#import-only-a-subdirectory-of-an-existing-repository)
+- [excludes some files by default, always](#excludes-some-files-by-default-always)
+- [show all commits related to a specific file](#show-all-commits-related-to-a-specific-file)
+- [make git cli get rid of small typos](#make-git-cli-get-rid-of-small-typos)
 
 **last changes: 12-15-2015**
 
