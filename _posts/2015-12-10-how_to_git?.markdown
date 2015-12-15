@@ -22,6 +22,9 @@ How to...
 - [import only a subdirectory of an existing repository](#-import-only-a-subdirectory-of-an-existing-repository)
 - [excludes some files by default, always](#-excludes-some-files-by-default-always)
 - [show all commits related to a specific file](#-show-all-commits-related-to-a-specific-file)
+- [make git cli get rid of small typos](#-make-git-cli-get-rid-of-small-typos)
+
+**last changes: 12-15-2015**
 
 
 ## Recipes
@@ -137,3 +140,11 @@ git log --follow <whatever-file>
 
 The `-p` option might be added to also show the content of each commit and to thereby give an
 overview of all changes that lead to the current file content.
+
+### ... make git cli get rid of small typos
+
+{% highlight bash %}
+git config --global help.autocorrect=1
+{% endhighlight %}
+
+Simple, efficient, clean.
