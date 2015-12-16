@@ -35,7 +35,6 @@ permalink: /references/
 ![][J] [Awesome Redux](https://github.com/xgrommx/awesome-redux)  
 ![][J] [Why FluxComponent > FluxMixin](https://github.com/acdlite/flummox/blob/v3.5.1/docs/docs/guides/why-flux-component-is-better-than-flux-mixin.md)  
 
-
 ##### Books
 
 ![][SI] [The Art of Computer Programming: volume 2, 3, 4](http://www.amazon.com/Art-Computer-Programming-Vol-Fundamental/dp/0201896834)  
@@ -49,7 +48,14 @@ permalink: /references/
 ![][SI] [Philosophy of Computer Science](http://www.cse.buffalo.edu/~rapaport/Papers/phics.pdf)  
 ![][SI] [Architecture Styles and the Design of Network-based Software Architectures](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)  
 ![][SI] [X.509 Certificates, A Tutorial for Android](https://www.msec.be/secureapps/seminarie/msec_x509_android.pdf)  
-![][F] [General Theory of Reactivity](https://github.com/kriskowal/gtor)  
+![][F] [General Theory of Reactivity](https://github.com/kriskowal/gtor)   
+![][SI] [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.fr/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)  
+![][G] [http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440](http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440)  
+![][ML] [The Elements of Style](http://www.amazon.fr/Elements-Style-William-Strunk-Jr/dp/020530902X)  
+![][SI] [Build APIs You Don't Hate](http://www.amazon.fr/Build-APIs-You-Wont-Hate/dp/0692232699)  
+![][SI] [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
+![][SI] [Pro Git](http://www.amazon.fr/Pro-Git-Scott-Chacon/dp/1484200772/)  
+
 
 ### Things that are indeed interesting
 
