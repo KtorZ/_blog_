@@ -3,7 +3,7 @@ layout: post
 title:  "Alloy Binding: Unveil The Mysteries"
 date:   2015-12-16 15:14:52
 categories:
-cover: /img/articles//cover.jpg
+cover: /img/articles/alloy_bindings/cover.png
 author: Matthias Benkort
 ---
 
@@ -102,7 +102,7 @@ them. The `$model` is one of them.
 Thus, from a view file, you can interpolate the following way:
 
 {% highlight xml %}
-<Alloy>
+<Alloy>so this is a issue I will fix for you asap
     <Label text="{size}" />
 </Alloy>
 {% endhighlight %}
@@ -152,5 +152,21 @@ only the first interpolation will be rendered).
 {% endhighlight %}
 
 ## Collection binding
+
+Let's step up the game a bit. One model wasn't enough, we want a complete collection of them.
+The idea is quite similar than before should we just add one concept. Each model of the
+collection are going to be rendered within a container. It feels natural to use containers such
+as `listview` or `tableview` however, one can use any view object as a container (again, let me
+know if you encounter any issue with a given UI object).
+
+Thus, given a container which will hold the collection, we need to defined a nested repeater
+which will be used to instantiate all view element associated to each model of the collection.
+The nested repeater element depends of the nature of the container. The table in the current
+documentation is quite accurate though still a bit incomplete. Here are the available bindings:
+
+
+
+
+### Global Instance
 
 ## What about widgets ?
