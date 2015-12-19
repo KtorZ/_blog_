@@ -58,12 +58,10 @@ directely refer to the model via string interpolation. To me, it makes more sens
 singleton in a separated file, for instance `Alloy.js` and keep away from the view file that
 ugly `<Model>`.
 
-
 If you try to reference a non-existing model, alloy will refuse to compile with a nice error
 message if you provide an invalid `src` attribute or, with a message a bit more irrelevant if
 you just specified an invalid base for the interpolation. In both cases, this just mean that
-you should only bind to existing model (You can try to bind to the `icon` model if you dare,
-Alloy will compile. Still, only God knows what would happen). 
+you should only bind to existing model.
 
 ### Local instance
 
@@ -140,7 +138,7 @@ provide a facade for those properties.
 
 - **Several interpolations with toJSON()**
 
-If you **don't** define a `transform()` method, you can take advantage of Backbone templates
+If you **don't** define a `transform()` method, you can take advantagGe of Backbone templates
 and use several interpolation tags in a same string. This won't compile nevertheless if you're
 using the `$model` trick, and won't work as expected if `transform()` is defined (in that case,
 only the first interpolation will be rendered).
@@ -150,6 +148,13 @@ only the first interpolation will be rendered).
     <Label text="{patate.greetings}: {patate.size}cm" />
 </Alloy>
 {% endhighlight %}
+
+- **Already hydrated models**
+
+Keep in mind that the view associated to your model will only render and re-render when a
+`fetch`, `change` or `destroy` event occurs. This means that if you try to bind a view to an
+already instantiated model that already possesses its data, you won't see the view as expected.
+If you're in such a case, `<your-model>.trigger('change')` will do the trick ;).
 
 ## Collection binding
 
@@ -162,11 +167,129 @@ know if you encounter any issue with a given UI object).
 Thus, given a container which will hold the collection, we need to defined a nested repeater
 which will be used to instantiate all view element associated to each model of the collection.
 The nested repeater element depends of the nature of the container. The table in the current
-documentation is quite accurate though still a bit incomplete. Here are the available bindings:
-
-
-
+documentation is quite accurate though still a bit incomplete. In practice, it is possible to
+use `ScrollView` and in fact, any other `View` (or component extending `View`) and then use any
+UI component that extends `View` as a repeater. 
 
 ### Global Instance
+
+Similarly to models, you may use a `Collection` markup tag to make you're creating a global
+instance of an existing colection (the name you supply should exist within your `models`
+folder). The instance is stored under `Alloy.Collections` meaning that, the same instance will
+be used between several controllers. 
+
+{% highlight xml %}
+<Alloy>
+    <Collection src="patate" />
+    <View dataCollection="patate">
+        <Label text="{size}" />
+    </View>
+</Alloy>
+{% endhighlight %}
+
+You can omit the `Collection` tag as well and this suppose that there is an existing instance
+store in `Alloy.Collections`. Incidentally, doing that, you're able to give any name you want
+to the collection, it does not have to fit an existing model of your `models` folder. This is
+quite interesting if you want to keep different collections holding the same type of models.
+
+Notice how we identified the container component with the `dataCollection` attribute. A
+collection holder identified this way can also define 3 other attributes:
+
+- **dataFunction**
+
+This property allow you to create an alias accessible within your controller to render the view
+on demand. This is useful when you're binding to an already populated collection; By using the
+provided function, you can render the data even if no Backbone events have been raised. You
+don't need the trick mentionned in the model section, here's a dedicated function.
+
+Using `dataFunction` is quite straightforward:
+
+**view.xml**
+{% highlight xml %}
+<Alloy>
+    <View dataCollection="patate" dataFunction="render">
+        <Label text="{size}" />
+    </View>
+</Alloy>
+{% endhighlight %}
+
+**controller.js**
+{% highlight javascript %}
+
+// Some code above 
+
+render() // Will behave the same as receiving a watched Backbone event on the collection 
+
+// Some code after
+{% endhighlight %}
+
+- **dataFilter**
+
+You have the possibility to filter the given collection to only render a part of that
+collection. This is done by providing a filtering function via the `dataFilter` attribute. The
+function takes a collection as an argument and is expecting to return an array of models. 
+
+**view.xml**
+{% highlight xml %}
+<Alloy>
+    <View dataCollection="patate" dataFilter="filter">
+        <Label text="{size}" />
+    </View>
+</Alloy>
+{% endhighlight %}
+
+**controller.js**
+{% highlight javascript %}
+// Only patate with a size > 10
+function filter (xs) {
+    return xs.models.filter(function (x) { return x.get('size') > 10 })
+}
+{% endhighlight %}
+
+
+Incidentally, this is quite useful to render different parts of the screen with data extracted
+from solely one collection. 
+
+- **dataTransform**  
+
+Remember the `transform()` method we could defined on models ? Well, it doesn't apply
+automatically to model inside a collection. Still, you can apply some transformations to your
+models by providing an appropriate via the `dataTransform` property. The function will run for
+each model stored in the collection and should return a JSON representation of that model. 
+The most convinient way is probably to define use the `transform()` method already defined for
+the associated model which could be done in either one of the following ways:
+
+**view.xml**  
+{% highlight xml %}
+<Alloy>
+    <View dataCollection="patate" dataTransform="transform">
+        <Label text="{size}" />
+    </View>
+</Alloy>
+{% endhighlight %}
+
+**controller.js**
+{% highlight javascript %}
+function transform (x) { return x.transform() }
+
+// Or
+
+var transform = Function.call.bind(require('alloy/models/<Model>').Model.prototype.transform)
+{% endhighlight %}
+
+### Local instance
+
+I won't spend a lot of time on that part. This is highly similar to what is done with models.
+you can add an `id` and a `instance` attributes to the `Collection` tag to create a local
+instance of the given collection. The collection is thereby stored under `$.<id>` and respect
+all previously written rules about collections. 
+
+### Remarks
+
+- **destroy()**
+
+Remember, you still have to call `$.destroy()` once done to remove all bindings that apply on
+collections. Without this, the garbage collector won't be able to free the memory after the
+controller life.
 
 ## What about widgets ?
