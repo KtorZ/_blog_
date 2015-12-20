@@ -8,12 +8,10 @@ permalink: /references/
 
 ##### Talks
 
-![][J] [Javascript <3 Unicode](https://vimeo.com/76597193)  
 ![][ML] [Course on Information Theory, Pattern Recognition, and Neural Networks](http://videolectures.net/course_information_theory_pattern_recognition/)  
 ![][M] [Immersive Math](http://immersivemath.com/ila/learnmore.html)  
 ![][F] [Asynchronous Programming at Netflix](https://www.youtube.com/watch?v=gawmdhCNy-A&ab_channel=@Scale)  
-![][SI] [TDD, as in Type-Directed Development](https://www.youtube.com/watch?v=iMITdKE4dys&ab_channel=JavaDay)   
-![][J] [Minimal API Surface Area](https://www.youtube.com/watch?v=4anAwXYqLG8&ab_channel=JSConf)  
+![][SI] [Learning GitHub](http://www.git-attitude.fr/2015/12/18/learning-github/)  
 
 ##### Articles & Blog Posts
 
@@ -29,11 +27,12 @@ permalink: /references/
 ![][J] [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)  
 ![][SI] [Patronizing Passwords](http://joelcalifa.com/blog/patronizing-passwords/)   
 ![][O] [Internet of Things Protocols & Standards](http://postscapes.com/internet-of-things-protocols)  
-![][O] [What is  LoRaWAN?](http://www.link-labs.com/what-is-lorawan/)  
+![][O] [What is LoRaWAN?](http://www.link-labs.com/what-is-lorawan/)  
 ![][J] [Styling React Components in Sass](http://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/)  
 ![][O] [Animated SVG vs GIF](http://sarasoueidan.com/blog/svg-vs-gif/)  
 ![][J] [Awesome Redux](https://github.com/xgrommx/awesome-redux)  
 ![][J] [Why FluxComponent > FluxMixin](https://github.com/acdlite/flummox/blob/v3.5.1/docs/docs/guides/why-flux-component-is-better-than-flux-mixin.md)  
+![][SI] [The Elm Architecture Tutorial](https://github.com/evancz/elm-architecture-tutorial)   
 
 ##### Books
 
@@ -50,7 +49,7 @@ permalink: /references/
 ![][SI] [X.509 Certificates, A Tutorial for Android](https://www.msec.be/secureapps/seminarie/msec_x509_android.pdf)  
 ![][F] [General Theory of Reactivity](https://github.com/kriskowal/gtor)   
 ![][SI] [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.fr/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)  
-![][G] [http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440](http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440)  
+![][G] [Go Programming Language](http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440)  
 ![][ML] [The Elements of Style](http://www.amazon.fr/Elements-Style-William-Strunk-Jr/dp/020530902X)  
 ![][SI] [Build APIs You Don't Hate](http://www.amazon.fr/Build-APIs-You-Wont-Hate/dp/0692232699)  
 ![][SI] [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
@@ -86,6 +85,10 @@ permalink: /references/
 ![][SI] [REST From Hero to Zero in 45 Minutes](https://www.youtube.com/watch?v=_k60dxlMjZ4)  
 ![][G] [7 Common Mistakes in Go and How to Avoid Them](https://www.youtube.com/watch?v=29LLRKIL_TI&ab_channel=HakkaLabs)   
 ![][G] [Go Concurrency Patterns](https://www.youtube.com/watch?v=f6kdp27TYZs&ab_channel=GoogleDevelopers)   
+![][SI] [Scrum Training Series](http://www.collab.net/services/training/agile_e-learning)    
+![][G] [Advanced Go Concurrency Patterns](https://www.youtube.com/watch?v=QDDwwePbDtw&ab_channel=GoogleDevelopers)  
+![][J] [Javascript <3 Unicode](https://vimeo.com/76597193)    
+
 
 ##### Articles & Blog posts
 
@@ -128,6 +131,7 @@ permalink: /references/
 ![][J] [Redux Best Practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e#.e10mae321)  
 ![][SI] [Pattern: Backends For Frontends](http://samnewman.io/patterns/architectural/bff/)   
 ![][G] [Go, REST APIs, and Pointers](https://willnorris.com/2014/05/go-rest-apis-and-pointers)   
+![][
 
 ##### Questions & Answers
 
