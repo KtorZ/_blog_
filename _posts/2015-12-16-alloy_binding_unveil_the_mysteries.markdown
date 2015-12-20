@@ -306,11 +306,14 @@ Backbone trigger one the listened events (`fetch`, `destroy`, `change`, `add`, `
 Widgets work merely the same way as Controllers. One can thereby use binding features within a
 widget with those subtle differences:
 
-    - Model and Collection instances are stored under `Widget.<Models|Collections>.<id>`.
-    - You can use any model defined at your application level but you may also define your own *private* models in the widget's folder
-    - You cannot omit the `<Model>` tag and access a model stored in `Widget.Models` this way.
-    - You cannot access models via a global instance. You need to specify an `id` and `instance` for every `Model` tag. 
-    - You can specify any model name to the `src` attribute (even one that does not reflect an existing model). 
+- Model and Collection instances are stored under `Widget.<Models|Collections>.<id>`.
+- You can use any model defined at your application level but you may also define your own
+  private  models in the widget's folder
+- You cannot omit the `<Model>` tag and access a model stored in `Widget.Models` this way.
+- You cannot access models via a global instance.  You need to specify an `id` and
+  `instance` for every `Model` tag. 
+- You can specify any model name to the `src` attribute (even one that does not reflect an
+  existing model). 
 
 
 I guess this is it. Enjoy the inconsistency! 
