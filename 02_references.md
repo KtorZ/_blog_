@@ -131,7 +131,6 @@ permalink: /references/
 ![][J] [Redux Best Practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e#.e10mae321)  
 ![][SI] [Pattern: Backends For Frontends](http://samnewman.io/patterns/architectural/bff/)   
 ![][G] [Go, REST APIs, and Pointers](https://willnorris.com/2014/05/go-rest-apis-and-pointers)   
-![][
 
 ##### Questions & Answers
 
