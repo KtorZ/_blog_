@@ -7,8 +7,8 @@ cover: /img/articles/alloy_bindings/cover.png
 author: Matthias Benkort
 ---
 
-Despite some reservations about several Alloy features and choices, one does not simply ignore
-the most interessant feature so-called data-binding. Unfortunately, the documentation on that
+Despite some reservations about several Alloy features and choices, one does not simply ignore 
+the most interesting feature so-called data-binding. Unfortunately, the documentation on that
 part is rather disastrous; let's try to provide some insights upon which rely in the future. 
 
 <!--more-->
