@@ -79,7 +79,7 @@ Notice the `$.patate` now in the interpolation and the two new attributes in the
 
 Each previous rules also apply in that case. The only difference is that, instead of storing
 and trying to access the model instance from `Alloy.Models`, this will rather place the
-instance within your controller instance and thus, give you an access through `$.<model_id>`.
+instance within your controller instance and thus, give you access through `$.<model_id>`.
 
 Unlike the global instance, you cannot omit the `<Model>` tag, nor the `id` attributes. Without
 any `id`, the instance will be stored in your controller under a name computed by the compiler,
@@ -100,7 +100,7 @@ them. The `$model` is one of them.
 Thus, from a view file, you can interpolate the following way:
 
 {% highlight xml %}
-<Alloy>so this is a issue I will fix for you asap
+<Alloy>
     <Label text="{size}" />
 </Alloy>
 {% endhighlight %}
@@ -108,7 +108,8 @@ Thus, from a view file, you can interpolate the following way:
 This syntax assumes that an argument `$model` (no point) has been passed to your controller
 with one condition. It should be an object with a property `__transform` which should also
 point to an object, empty or not. Because Alloy will try to access this property directly, if
-you omit it, the application will crash at runtime. 
+you omit it, the application will crash at runtime. By the by, this object does have to be a
+Backbone model, yet merely an object which defines a *__transform* attribute.
 
 You can see the `__transform` property as the result of either the `transform()` or the
 `toJSON()` methods we mentionned above. You can populate this object with properties that need
@@ -120,7 +121,7 @@ access the property via `$model.get('<property_name>')`.
 
 - **Beware of caps**
 
-If you use a capitalize name for your model, use the downcase name when refering to it in the
+If you use a capitalized name for your model, use the downcase name when refering to it in the
 interpolation. Alloy stores models names as lower cases. 
 
 {% highlight xml %}
@@ -138,7 +139,7 @@ provide a facade for those properties.
 
 - **Several interpolations with toJSON()**
 
-If you **don't** define a `transform()` method, you can take advantagGe of Backbone templates
+If you **don't** define a `transform()` method, you can take advantage of Backbone templates
 and use several interpolation tags in a same string. This won't compile nevertheless if you're
 using the `$model` trick, and won't work as expected if `transform()` is defined (in that case,
 only the first interpolation will be rendered).
@@ -154,7 +155,7 @@ only the first interpolation will be rendered).
 Keep in mind that the view associated to your model will only render and re-render when a
 `fetch`, `change` or `destroy` event occurs. This means that if you try to bind a view to an
 already instantiated model that already possesses its data, you won't see the view as expected.
-If you're in such a case, `<your-model>.trigger('change')` will do the trick ;).
+If you're in such a case, `<your-model>.trigger('change')` will do the trick.
 
 ## Collection binding
 
@@ -165,18 +166,19 @@ as `listview` or `tableview` however, one can use any view object as a container
 know if you encounter any issue with a given UI object).
 
 Thus, given a container which will hold the collection, we need to defined a nested repeater
-which will be used to instantiate all view element associated to each model of the collection.
-The nested repeater element depends of the nature of the container. The table in the current
-documentation is quite accurate though still a bit incomplete. In practice, it is possible to
-use `ScrollView` and in fact, any other `View` (or component extending `View`) and then use any
-UI component that extends `View` as a repeater. 
+which will be used to instantiate all children view elements associated to each model of the
+collection.  The nested repeater element depends of the nature of the container. The table in
+the current documentation is quite accurate though still a bit incomplete. In practice, it is
+possible to use `ScrollView` and in fact, any other `View` (or component extending `View`) as a
+container and then use any UI component that extends `View` as a repeater (`ImageView` for
+instance). 
 
 ### Global Instance
 
-Similarly to models, you may use a `Collection` markup tag to make you're creating a global
-instance of an existing colection (the name you supply should exist within your `models`
-folder). The instance is stored under `Alloy.Collections` meaning that, the same instance will
-be used between several controllers. 
+In the same manner as for models you may use a `Collection` markup tag to create a global collection
+instance of an existing model (the name you supply should exist within your `models` folder).
+The instance is stored under `Alloy.Collections` meaning that, the same instance will be used
+between several controllers. 
 
 {% highlight xml %}
 <Alloy>
@@ -187,19 +189,19 @@ be used between several controllers.
 </Alloy>
 {% endhighlight %}
 
-You can omit the `Collection` tag as well and this suppose that there is an existing instance
-store in `Alloy.Collections`. Incidentally, doing that, you're able to give any name you want
+You can omit the `Collection` tag as well and this supposes that there is an existing instance
+stored in `Alloy.Collections`. Incidentally, doing that, you're able to give any name you want
 to the collection, it does not have to fit an existing model of your `models` folder. This is
 quite interesting if you want to keep different collections holding the same type of models.
 
 Notice how we identified the container component with the `dataCollection` attribute. A
-collection holder identified this way can also define 3 other attributes:
+collection holder which as been tagged like this can also define 3 other attributes:
 
 - **dataFunction**
 
-This property allow you to create an alias accessible within your controller to render the view
+This property allows you to create an alias accessible within your controller to render the view
 on demand. This is useful when you're binding to an already populated collection; By using the
-provided function, you can render the data even if no Backbone events have been raised. You
+provided function, you can render the data even if no Backbone event has been raised. You
 don't need the trick mentionned in the model section, here's a dedicated function.
 
 Using `dataFunction` is quite straightforward:
@@ -252,12 +254,13 @@ from solely one collection.
 
 - **dataTransform**  
 
-Remember the `transform()` method we could defined on models ? Well, it doesn't apply
+Remember the `transform()` method we could define on models ? Well, it doesn't apply
 automatically to model inside a collection. Still, you can apply some transformations to your
-models by providing an appropriate via the `dataTransform` property. The function will run for
-each model stored in the collection and should return a JSON representation of that model. 
-The most convinient way is probably to define use the `transform()` method already defined for
-the associated model which could be done in either one of the following ways:
+models by providing an appropriate function via the `dataTransform` property. The function will
+run for each model stored in the collection and should return a JSON representation of that
+model.  The most convenient way to use it is probably to take advantage of the `transform()`
+method already defined for the associated model which could be done in either one of the
+following ways:
 
 **view.xml**  
 {% highlight xml %}
@@ -280,7 +283,7 @@ var transform = Function.call.bind(require('alloy/models/<Model>').Model.prototy
 ### Local instance
 
 I won't spend a lot of time on that part. This is highly similar to what is done with models.
-you can add an `id` and a `instance` attributes to the `Collection` tag to create a local
+You can add an `id` and a `instance` attributes to the `Collection` tag to create a local
 instance of the given collection. The collection is thereby stored under `$.<id>` and respect
 all previously written rules about collections. 
 
@@ -292,4 +295,22 @@ Remember, you still have to call `$.destroy()` once done to remove all bindings 
 collections. Without this, the garbage collector won't be able to free the memory after the
 controller life.
 
-## What about widgets ?
+- **Already populated collection**
+
+This remark is identical to the one about models. Your collection will only be rendered if
+Backbone trigger one the listened events (`fetch`, `destroy`, `change`, `add`, `remove` or
+`reset`)  unless you made an explicit call to the function aliased by `dataFunction`
+
+- **Widgets**
+
+Widgets work merely the same way as Controllers. One can thereby use binding features within a
+widget with those subtle differences:
+
+    - Model and Collection instances are stored under `Widget.<Models|Collections>.<id>`.
+    - You can use any model defined at your application level but you may also define your own *private* models in the widget's folder
+    - You cannot omit the `<Model>` tag and access a model stored in `Widget.Models` this way.
+    - You cannot access models via a global instance. You need to specify an `id` and `instance` for every `Model` tag. 
+    - You can specify any model name to the `src` attribute (even one that does not reflect an existing model). 
+
+
+I guess this is it. Enjoy the inconsistency! 
