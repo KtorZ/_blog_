@@ -54,6 +54,7 @@ permalink: /references/
 ![][SI] [Build APIs You Don't Hate](http://www.amazon.fr/Build-APIs-You-Wont-Hate/dp/0692232699)  
 ![][SI] [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 ![][SI] [Pro Git](http://www.amazon.fr/Pro-Git-Scott-Chacon/dp/1484200772/)  
+![][ML] [Artificial Intelligence - Foundations of Computational Agents](http://artint.info/html/ArtInt.html)  
 
 
 ### Things that are indeed interesting
@@ -131,6 +132,7 @@ permalink: /references/
 ![][J] [Redux Best Practices](https://medium.com/lexical-labs-engineering/redux-best-practices-64d59775802e#.e10mae321)  
 ![][SI] [Pattern: Backends For Frontends](http://samnewman.io/patterns/architectural/bff/)   
 ![][G] [Go, REST APIs, and Pointers](https://willnorris.com/2014/05/go-rest-apis-and-pointers)   
+![][SI] [Transitioning from Relational Databases to MongoDB](http://blog.mongodb.org/post/72874267152/transitioning-from-relational-databases-to-mongodb)  
 
 ##### Questions & Answers
 
