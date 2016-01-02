@@ -173,7 +173,7 @@ And this could be undone with:
 git update-index --no-assume-unchanged <whatever-file>
 {% endhighlight %}
 
-Doing this, you can simply ignore changes that occurs on a file stored in the git-index. While
+Doing this, you can simply ignore changes that occurs on a file stored in the git-index. Why
 doing such a thing ? For instance, you'll have to change the content of a file during a small
 dev session (you add some log lines or some other irrelevant content inside) but the real
 effort concerns other files in the repo. You still want to commit changes and to operate as
