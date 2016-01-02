@@ -18,21 +18,17 @@ permalink: /references/
 ![][O] [The Making of Lemmings](http://readonlymemory.vg/the-making-of-lemmings/)  
 ![][M] [Application Of Graph Theory](http://www.dharwadker.org/pirzada/applications/)  
 ![][ML] [Neural Networks, Types and Functional Programming](http://colah.github.io/posts/2015-09-NN-Types-FP/)  
-![][J] [Seven JavaScript Quirks I Wish I'd Know About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)  
-![][J] [A Cartoon Guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
 ![][O] [The Secret Developers of the Video Game Industry](http://www.polygon.com/2015/9/30/9394355/the-secret-developers-of-the-video-game-industry)  
 ![][ML] [Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/convolutional-networks/)  
 ![][J] [Want to Learn JavaScript in 2015 / 2016?](https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225#.7hqqz155b)  
 ![][J] [ES6 in Depth](https://hacks.mozilla.org/category/es6-in-depth/)  
 ![][J] [How JavaScript Event Delegation Works](https://davidwalsh.name/event-delegate)  
 ![][SI] [Patronizing Passwords](http://joelcalifa.com/blog/patronizing-passwords/)   
-![][O] [Internet of Things Protocols & Standards](http://postscapes.com/internet-of-things-protocols)  
-![][O] [What is LoRaWAN?](http://www.link-labs.com/what-is-lorawan/)  
-![][J] [Styling React Components in Sass](http://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/)  
-![][O] [Animated SVG vs GIF](http://sarasoueidan.com/blog/svg-vs-gif/)  
-![][J] [Awesome Redux](https://github.com/xgrommx/awesome-redux)  
 ![][J] [Why FluxComponent > FluxMixin](https://github.com/acdlite/flummox/blob/v3.5.1/docs/docs/guides/why-flux-component-is-better-than-flux-mixin.md)  
 ![][SI] [The Elm Architecture Tutorial](https://github.com/evancz/elm-architecture-tutorial)   
+![][SI] [Everthing I Needed to Know About Good UI I Learned While Working in
+Restaurants](https://www.nngroup.com/articles/ux-learn-in-restaurants/)   
+![][SI]   
 
 ##### Books
 
@@ -49,10 +45,8 @@ permalink: /references/
 ![][SI] [X.509 Certificates, A Tutorial for Android](https://www.msec.be/secureapps/seminarie/msec_x509_android.pdf)  
 ![][F] [General Theory of Reactivity](https://github.com/kriskowal/gtor)   
 ![][SI] [Design Patterns: Elements of Reusable Object-Oriented Software](http://www.amazon.fr/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612)  
-![][G] [Go Programming Language](http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440)  
 ![][ML] [The Elements of Style](http://www.amazon.fr/Elements-Style-William-Strunk-Jr/dp/020530902X)  
 ![][SI] [Build APIs You Don't Hate](http://www.amazon.fr/Build-APIs-You-Wont-Hate/dp/0692232699)  
-![][SI] [Clean Code: A Handbook of Agile Software Craftsmanship](http://www.amazon.fr/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 ![][SI] [Pro Git](http://www.amazon.fr/Pro-Git-Scott-Chacon/dp/1484200772/)  
 ![][ML] [Artificial Intelligence - Foundations of Computational Agents](http://artint.info/html/ArtInt.html)  
 
@@ -133,6 +127,16 @@ permalink: /references/
 ![][SI] [Pattern: Backends For Frontends](http://samnewman.io/patterns/architectural/bff/)   
 ![][G] [Go, REST APIs, and Pointers](https://willnorris.com/2014/05/go-rest-apis-and-pointers)   
 ![][SI] [Transitioning from Relational Databases to MongoDB](http://blog.mongodb.org/post/72874267152/transitioning-from-relational-databases-to-mongodb)  
+![][J] [Seven JavaScript Quirks I Wish I'd Know About](http://developer.telerik.com/featured/seven-javascript-quirks-i-wish-id-known-about/)  
+![][J] [A Cartoon Guide to Flux](https://code-cartoons.com/a-cartoon-guide-to-flux-6157355ab207)  
+![][O] [Internet of Things Protocols & Standards](http://postscapes.com/internet-of-things-protocols)  
+![][O] [What is LoRaWAN?](http://www.link-labs.com/what-is-lorawan/)  
+![][J] [Styling React Components in Sass](http://hugogiraudel.com/2015/06/18/styling-react-components-in-sass/)  
+![][O] [Animated SVG vs GIF](http://sarasoueidan.com/blog/svg-vs-gif/)  
+![][J] [Awesome Redux](https://github.com/xgrommx/awesome-redux)   
+![][O] [Docker vs. Vagrant](https://www.scriptrock.com/articles/docker-vs-vagrant)   
+![][O] [Retour sur la pénurie de devs](http://sametmax.com/retour-sur-la-penurie-de-devs/)   
+![][SI] [When Coding Style Survives Compilation](https://freedom-to-tinker.com/blog/aylin/when-coding-style-survives-compilation-de-anonymizing-programmers-from-executable-binaries/)   
 
 ##### Questions & Answers
 
@@ -144,7 +148,8 @@ Know](https://medium.com/javascript-scene/10-interview-questions-every-javascrip
 ![][SI] [Difference Between git checkout filename And git checkout -- filename](http://stackoverflow.com/questions/6561142/difference-between-git-checkout-filename-and-git-checkout-filename)   
 ![][SI] [The Definitive Guide To Form-Based Website Authentication](http://stackoverflow.com/questions/549/the-definitive-guide-to-form-based-website-authentication)  
 ![][O] [How to Create Animated GIF Images of a Screencast](http://askubuntu.com/questions/107726/how-to-create-animated-gif-images-of-a-screencast)  
-![][SI] [What Are Some Real Life Example of Design Patterns](http://stackoverflow.com/questions/36129/what-are-some-real-life-examples-of-design-patterns-used-in-software)
+![][SI] [What Are Some Real Life Example of Design Patterns](http://stackoverflow.com/questions/36129/what-are-some-real-life-examples-of-design-patterns-used-in-software)   
+![][O] [What Does Docker Add to lxc-tool?](http://stackoverflow.com/questions/17989306/what-does-docker-add-to-lxc-tools-the-userspace-lxc-tools)   
 
 ##### Books
 
@@ -159,6 +164,7 @@ Thought](http://www.amazon.com/Practical-Vim-Thought-Pragmatic-Programmers/dp/19
 ![][F] [Learn You Haskell](http://learnyouahaskell.com)   
 ![][O] [The Little Printf](http://ferd.ca/the-little-printf.html)  
 ![][SI] [Learn X in Y minutes](https://learnxinyminutes.com/)  
+![][G] [Go Programming Language](http://www.amazon.fr/Go-Programming-Language-Alan-Donovan/dp/0134190440)  
 
 
 [J]: /img/puce_javascript.svg
