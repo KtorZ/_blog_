@@ -50,3 +50,11 @@ interesting and rewarding.
 To fulfill such a dream, I need to get used to machine learning, functional programming and
 good patterns. Designing software solutions and being involved in some start-up
 projects is both motivating and full of enlightment. 
+
+<br/><br/><br/>
+
+<p align="center">
+    <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 8th January 2016">
+        C.V - updated the 8th January 2016
+    </a>
+</p>
