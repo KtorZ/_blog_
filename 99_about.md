@@ -55,6 +55,6 @@ projects is both motivating and full of enlightment.
 
 <p align="center">
     <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 8th January 2016">
-        C.V - updated the 8th January 2016
+        C.V - updated the 9th January 2016
     </a>
 </p>
