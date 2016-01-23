@@ -39,6 +39,18 @@ permalink: /references/
 ![][SI] [Pro Git](http://www.amazon.fr/Pro-Git-Scott-Chacon/dp/1484200772/)  
 ![][AI] [Artificial Intelligence - Foundations of Computational Agents](http://artint.info/html/ArtInt.html)  
 
+##### Tools
+
+![][MA] [Meistertask - Task Manager](https://www.meistertask.com/)  
+![][SI] [Creately - Diagramming](http://creately.com/)   
+![][ML] [Let's Encrypt - Free SSL Authority](https://letsencrypt.org/)   
+![][BA] [Message Pack - Binary Serializer](http://msgpack.org/)  
+![][ML] [Neovim - Text Editor](https://neovim.io/)  
+![][ML] [Hugo - Static Website Generator](https://gohugo.io/)  
+![][SI] [Draw - Flowchart Drawer](https://www.draw.io/)  
+![][SI] [Semaphore - Continuous Integrator](https://semaphoreci.com/)  
+![][FR] [Zuul - Multibrowser Tester](https://github.com/defunctzombie/zuul)  
+
 ### Things that are indeed interesting
 
 ##### Talks
@@ -68,6 +80,32 @@ permalink: /references/
 
 ![][MI] [The Elements of Style](http://www.amazon.fr/Elements-Style-William-Strunk-Jr/dp/020530902X)  
 
+##### Tools
+
+![][JS] [ES6 features - JavaScript Helper](http://es6-features.org/)  
+![][JS] [Babel - JavaScript transpiler](https://babeljs.io/)  
+![][JS] [Webpack - Module bundler](https://webpack.github.io)  
+![][MA] [Asana - Task Manager](https://asana.com)  
+![][MA] [Slack - Messaging Client](https://slack.com)  
+![][SI] [Gitignore - Gitignore Generator](https://www.gitignore.io/)  
+![][MA] [Trello - Task Manager](https://trello.com/)  
+![][MI] [Jekyll - Static Website Generator](https://jekyllrb.com/)   
+![][MI] [Shields - Badges Generator](http://shields.io/)  
+![][BA] [Parse - BaaS](https://parse.com/)   
+![][MA] [Teamwork - Team Manager](https://www.teamwork.com/)  
+![][MI] [Pandoc - Document Converter](http://pandoc.org/)  
+![][FR] [Colorhunt - Color Scheme Generator](http://colorhunt.co/)  
+![][FR] [FlatUIColors - Color Scheme Generator](http://flatuicolors.com/)  
+![][SI] [FooPlot - Maths Plotter](http://fooplot.com/)  
+![][SI] [Travis - Continuous Integrator](https://travis-ci.org)  
+![][SI] [Docker - Application Builder](https://www.docker.com/)  
+![][SI] [Vagrant - VM Manager](https://www.vagrantup.com/)    
+![][JS] [Eslint - JavaScript Linter](http://eslint.org/)  
+
+
+
+
+
 [FP]: /img/puce_fp-frp.svg
 [MI]: /img/puce_miscellaneous.svg
 [SI]: /img/puce_engineering.svg
@@ -79,3 +117,4 @@ permalink: /references/
 [EL]: /img/puce_elm.svg
 [AI]: /img/puce_ai.svg
 [ML]: /img/puce_machine_learning.svg
+[MA]: /img/puce_management.svg
