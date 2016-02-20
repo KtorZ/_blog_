@@ -71,6 +71,15 @@ nous demanderait autant d'effort que sur le travail et c'est ce dernier qui est 
 essai. Que l'Art soit une volonté de contribuer à l'entropie naturelle et qu'il s'oppose en ce
 sens au travail proprement dit, nous l'acceptons comme postulat. 
 
+Vu sous ces différents angles, cette définition du travail paraît peu naturelle en ce qu'elle
+s'oppose à la conception moderne du travail. Alors que jusqu'à peu, le labeur était demeuré
+extrinsèquement négatif, sorte de punition que l'on infligeait aux classes les plus pauvres et
+aux esclaves. Durant des siècles, travailler n'était réservé qu'à une partie de la population
+de sorte qu'une autre minorité en charge des ressources et des richesses puissent jouir de
+temps de loisirs et d'activités intellectuelles. Dès le début du XXème siècle, le travail est
+mis en avant par les régimes totalitaires qui met l'accent sur les bienfaits du travail et les
+avantages sociaux qu'il peut procurer. 
+
 
 
 Ce sont les propos que l'on peut emprunter à Markx. Michel Serres propose une autre
