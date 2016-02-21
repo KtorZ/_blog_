@@ -20,6 +20,8 @@ permalink: /references/
 
 ![][GO] [Composable Pipelines Improved](https://blog.gopheracademy.com/advent-2015/composable-pipelines-improvements/)  
 ![][ML] [Deep Learning - Google Courses](https://www.udacity.com/course/deep-learning--ud730)  
+![][FP] [Classroom Coding with Prof. Frisby](https://www.youtube.com/watch?v=h_tkIpwbsxY&list=PLK_hdtAJ4KqX0JOs_KMAmUNTNMRYhWEaC&ab_channel=BrianLonsdorf)  
+![][SI] [So You Want to Write a Package Manager](https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527)  
 
 ##### Articles & Blog Posts
 
@@ -27,6 +29,17 @@ permalink: /references/
 ![][SI] [Coeffects: The Next Big Programming Challenge](http://tomasp.net/blog/2014/why-coeffects-matter/)  
 ![][JS] [Understanding Garbage Collection and Hunting Memory Leaks in Node.js](http://blog.codeship.com/understanding-garbage-collection-in-node-js/)  
 ![][SI] [The Mighty Reflog And The Amazing Bisect](http://jeffkreeftmeijer.com/2010/the-mighty-reflog-and-the-amazing-bisect/)  
+![][FR] [The 5 Most Popular Frontend Framework of 2014 Compared](http://www.sitepoint.com/5-most-popular-frontend-frameworks-compared/)  
+![][SI] [How Can Cryptocurrency and Blockchain Technology Play a Role in Building Social and Solidarity Finance?](http://www.unrisd.org/80256B3C005BCCF9/(httpAuxPages)/196AEF663B617144C1257F550057887C/$file/Brett%20Scott.pdf)  
+![][FR] [Why I No Longer Use MVC Frameworks](http://www.infoq.com/articles/no-more-mvc-frameworks)   
+![][ML] [Sparse Neural Networks With Large Learning Diversity](http://arxiv.org/pdf/1102.4240.pdf)  
+![][FP] [State of the Haskell Ecosystem](http://www.haskellforall.com/2016/02/state-of-haskell-ecosystem-february.html?m=1)  
+![][SI] [Why There Is No Hitchhiker's Guide to Mathematics for Programmers](http://jeremykun.com/2013/02/08/why-there-is-no-hitchhikers-guide-to-mathematics-for-programmers/)  
+![][SI] [Write Code That Is Easy to Delete, Not Easy to Extend](http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)  
+![][MI] [The Internet of Things Will Be The World's Biggest Robot](https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html)  
+![][ML] [Why Video Games Are Essential for Inventing Artificial Intelligence](http://togelius.blogspot.nl/2016/01/why-video-games-are-essential-for.html)  
+![][FP] [Meet Idris, a Language That Will Change The Way You Think About Programming](http://crufter.com/2015/01/01/idris-a-language-which-will-change-the-way-you-think-about-programming/)  
+![][SI] [Compiling to WebAssembly: It's Happening!](https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/)  
 
 ##### Books
 
@@ -38,15 +51,16 @@ permalink: /references/
 ![][SI] [Build APIs You Don't Hate](http://www.amazon.fr/Build-APIs-You-Wont-Hate/dp/0692232699)  
 ![][SI] [Pro Git](http://www.amazon.fr/Pro-Git-Scott-Chacon/dp/1484200772/)  
 ![][AI] [Artificial Intelligence - Foundations of Computational Agents](http://artint.info/html/ArtInt.html)  
+![][SI] [Building Smarter Planet Solutions with MQTT](http://www.redbooks.ibm.com/redbooks/pdfs/sg248054.pdf)  
 
 ##### Tools
 
 ![][MA] [Meistertask - Task Manager](https://www.meistertask.com/)  
 ![][SI] [Creately - Diagramming](http://creately.com/)   
-![][ML] [Let's Encrypt - Free SSL Authority](https://letsencrypt.org/)   
+![][MI] [Let's Encrypt - Free SSL Authority](https://letsencrypt.org/)   
 ![][BA] [Message Pack - Binary Serializer](http://msgpack.org/)  
-![][ML] [Neovim - Text Editor](https://neovim.io/)  
-![][ML] [Hugo - Static Website Generator](https://gohugo.io/)  
+![][MI] [Neovim - Text Editor](https://neovim.io/)  
+![][MI] [Hugo - Static Website Generator](https://gohugo.io/)  
 ![][SI] [Draw - Flowchart Drawer](https://www.draw.io/)  
 ![][SI] [Semaphore - Continuous Integrator](https://semaphoreci.com/)  
 ![][FR] [Zuul - Multibrowser Tester](https://github.com/defunctzombie/zuul)  
@@ -57,6 +71,8 @@ permalink: /references/
 
 ![][FP] [Category Theory](https://www.youtube.com/watch?v=o6L6XeNdd_k)  
 ![][FP] [Controlling Time and Space: Understanding the Many Formulation of FRP](https://www.youtube.com/watch?v=Agu6jipKfYw&ab_channel=StrangeLoop)  
+![][GO] [Stupid Gopher Tricks](https://www.youtube.com/watch?v=UECh7X07m6E&ab_channel=GolangUKConference)  
+![][SI] [Principles of MicroServices](https://vimeo.com/131632250)  
 
 ##### Questions & Answers
 
@@ -73,8 +89,12 @@ permalink: /references/
 ![][MI] [Retour sur la pénurie de devs](http://sametmax.com/retour-sur-la-penurie-de-devs/)  
 ![][GO] [Stopping Listening HTTP Server in Go](http://www.hydrogen18.com/blog/stop-listening-http-server-go.html)  
 ![][MI] [A Short Fable of Software Engineering vs. Regular Engineering](http://researchblogs.cs.bham.ac.uk/thelablunch/2016/01/a-short-fable-of-software-engineering-vs-regular-engineering/)  
-![][FR] [Why React / Redux is an Inferior Paradigm](http://staltz.com/why-react-redux-is-an-inferior-paradigm.html)  
-
+![][FP] [Why React / Redux is an Inferior Paradigm](http://staltz.com/why-react-redux-is-an-inferior-paradigm.html)  
+![][FP] [Reactive MVC and the Virtual DOM](http://futurice.com/blog/reactive-mvc-and-the-virtual-dom)  
+![][JS] [Universal JavaScript](https://medium.com/@mjackson/universal-javascript-4761051b7ae9#.7iug56rd3)  
+![][FP] [The Joy and Agony of Haskell in Production](http://www.stephendiehl.com/posts/production.html)  
+![][SI] [The Wrong Abstraction](http://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)  
+![][SI] [Microcontainers - Tiny, Portable Docker Containers](http://www.iron.io/microcontainers-tiny-portable-containers/)  
 
 ##### Books
 
@@ -101,9 +121,7 @@ permalink: /references/
 ![][SI] [Docker - Application Builder](https://www.docker.com/)  
 ![][SI] [Vagrant - VM Manager](https://www.vagrantup.com/)    
 ![][JS] [Eslint - JavaScript Linter](http://eslint.org/)  
-
-
-
+![][JS] [JavaScripting - Libraries source](https://www.javascripting.com/)  
 
 
 [FP]: /img/puce_fp-frp.svg
