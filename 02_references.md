@@ -31,15 +31,15 @@ permalink: /references/
 ![][SI] [The Mighty Reflog And The Amazing Bisect](http://jeffkreeftmeijer.com/2010/the-mighty-reflog-and-the-amazing-bisect/)  
 ![][FR] [The 5 Most Popular Frontend Framework of 2014 Compared](http://www.sitepoint.com/5-most-popular-frontend-frameworks-compared/)  
 ![][SI] [How Can Cryptocurrency and Blockchain Technology Play a Role in Building Social and Solidarity Finance?](http://www.unrisd.org/80256B3C005BCCF9/(httpAuxPages)/196AEF663B617144C1257F550057887C/$file/Brett%20Scott.pdf)  
-![][FR] [Why I No Longer Use MVC Frameworks](http://www.infoq.com/articles/no-more-mvc-frameworks)   
 ![][ML] [Sparse Neural Networks With Large Learning Diversity](http://arxiv.org/pdf/1102.4240.pdf)  
 ![][FP] [State of the Haskell Ecosystem](http://www.haskellforall.com/2016/02/state-of-haskell-ecosystem-february.html?m=1)  
 ![][SI] [Why There Is No Hitchhiker's Guide to Mathematics for Programmers](http://jeremykun.com/2013/02/08/why-there-is-no-hitchhikers-guide-to-mathematics-for-programmers/)  
-![][SI] [Write Code That Is Easy to Delete, Not Easy to Extend](http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)  
-![][MI] [The Internet of Things Will Be The World's Biggest Robot](https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html)  
-![][ML] [Why Video Games Are Essential for Inventing Artificial Intelligence](http://togelius.blogspot.nl/2016/01/why-video-games-are-essential-for.html)  
 ![][FP] [Meet Idris, a Language That Will Change The Way You Think About Programming](http://crufter.com/2015/01/01/idris-a-language-which-will-change-the-way-you-think-about-programming/)  
-![][SI] [Compiling to WebAssembly: It's Happening!](https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/)  
+![][SI] [HyperText Transfer Protocol Version 2](http://httpwg.org/specs/rfc7540.html)   
+![][SI] [The Majestic Monolith](https://m.signalvnoise.com/the-majestic-monolith-29166d022228#.68pbthmo8)  
+![][SI] [20 years -- One Standard: The Story of TCP/IP](http://www.cbi.umn.edu/iterations/spira.html)
+
+
 
 ##### Books
 
@@ -65,6 +65,7 @@ permalink: /references/
 ![][SI] [Semaphore - Continuous Integrator](https://semaphoreci.com/)  
 ![][FR] [Zuul - Multibrowser Tester](https://github.com/defunctzombie/zuul)  
 
+
 ### Things that are indeed interesting
 
 ##### Talks
@@ -72,7 +73,8 @@ permalink: /references/
 ![][FP] [Category Theory](https://www.youtube.com/watch?v=o6L6XeNdd_k)  
 ![][FP] [Controlling Time and Space: Understanding the Many Formulation of FRP](https://www.youtube.com/watch?v=Agu6jipKfYw&ab_channel=StrangeLoop)  
 ![][GO] [Stupid Gopher Tricks](https://www.youtube.com/watch?v=UECh7X07m6E&ab_channel=GolangUKConference)  
-![][SI] [Principles of MicroServices](https://vimeo.com/131632250)  
+![][SI] [Principles of MicroServices](https://vimeo.com/131632250)   
+![][GO] [Golang UK: Program Analysis](https://www.youtube.com/watch?v=oorX84tBMqo)  
 
 ##### Questions & Answers
 
@@ -95,6 +97,11 @@ permalink: /references/
 ![][FP] [The Joy and Agony of Haskell in Production](http://www.stephendiehl.com/posts/production.html)  
 ![][SI] [The Wrong Abstraction](http://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)  
 ![][SI] [Microcontainers - Tiny, Portable Docker Containers](http://www.iron.io/microcontainers-tiny-portable-containers/)  
+![][FR] [Why I No Longer Use MVC Frameworks](http://www.infoq.com/articles/no-more-mvc-frameworks)   
+![][SI] [Write Code That Is Easy to Delete, Not Easy to Extend](http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)  
+![][MI] [The Internet of Things Will Be The World's Biggest Robot](https://www.schneier.com/blog/archives/2016/02/the_internet_of_1.html)  
+![][ML] [Why Video Games Are Essential for Inventing Artificial Intelligence](http://togelius.blogspot.nl/2016/01/why-video-games-are-essential-for.html)  
+![][SI] [Compiling to WebAssembly: It's Happening!](https://hacks.mozilla.org/2015/12/compiling-to-webassembly-its-happening/)  
 
 ##### Books
 
