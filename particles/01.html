@@ -5881,9 +5881,11 @@ Elm.Main.make = function (_elm) {
    var Rotate = function (a) {    return {ctor: "Rotate",_0: a};};
    var Move = {ctor: "Move"};
    var Particle = F3(function (a,b,c) {    return {x: a,y: b,d: c};});
-   var initParticles = A2($List.repeat,200,A3(Particle,0,0,0));
+   var initParticles = A2(update,
+   Rotate(14),
+   A2(update,Rotate(14),A2(update,Rotate(14),A2(update,Rotate(14),A2(update,Rotate(14),A2(update,Rotate(14),A2($List.repeat,300,A3(Particle,0,0,0))))))));
    var main = function () {
-      var sigRotate = A2($Signal.map,function (_p5) {    return Rotate($Basics.round($Time.inMilliseconds(_p5)));},$Time.every(250 * $Time.millisecond));
+      var sigRotate = A2($Signal.map,function (_p5) {    return Rotate($Basics.round($Time.inMilliseconds(_p5)));},$Time.every(200 * $Time.millisecond));
       var sigMove = A2($Signal.map,$Basics.always(Move),$Time.fps(30));
       var particles = A3($Signal.foldp,update,initParticles,A2($Signal.merge,sigMove,sigRotate));
       return A2($Signal.map,function (_p6) {    return A3($Graphics$Collage.collage,500,500,A2($List.map,draw,_p6));},particles);
