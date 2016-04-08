@@ -3,7 +3,7 @@ layout: post
 title:  Why Don't You Use Elm?
 date:   2016-04-07 22:10:47
 categories:
-cover: /img/articles//cover.jpg
+cover: /img/articles/why_not_elm/cover.png
 author: Matthias Benkort
 ---
 
@@ -31,23 +31,23 @@ or the *Angular* way yet you're not likely to re-use their concepts elsewhere on
 don't you learn *Elm* instead? Well I know, *Elm* is a different language (and a functional
 one, yuck!) and the learning curve is way too important. Meh.
 
-Therefore it seems familiar and comfortable, as the big majority of frontend frameworks is
-built on top of *JavaScript*, to stick with *JavaScript* as much as possible. Hence it feels
+Therefore, it seems familiar and comfortable, as the big majority of frontend frameworks is
+built on top of *JavaScript*, to stick with *JavaScript* as much as possible. Hence, it feels
 like there's one less barrier to overcome; the underlying language is always the same, isn't
 it? Having a quick look at the *JavaScript* in *Angular*, and the one in *React*, it really
-looks like two fairly different flavor of *JavaScript*. The former would rather uses a
+looks like two fairly different flavor of *JavaScript*. The former would rather use a
 Vanilla/ES5 *JavaScript* whereas the latter embraces ES6/ES7 with an extensive usage of
 destructuring and methods declaration shortcuts. It really sounds like two different - albeit
 from a common ancestor - languages. You end up learning two distinct languages. So what's your
 excuse now? Instead of learning a framework (and its underlying *JavaScript* flavor), you're
 able to deal with a language which will by itself, intrinsically, offers you all the control
 and the behaviour you'll expect from a framework. Plus, because you are facing directly
-patterns and concerns which built your code, you're getting more stronger insights. There's one
+patterns and concerns which built your code, you're getting stronger insights. There's one
 remark though. I've been told the main issue with *Elm* was about reading the documention. For
 non fonctional programming developers, it appears to be an impenetrable dialect whereas
-documentations from trendiest frameworks are more "standard", more usual.  Inasmuch as it seems
-to be the only obstacle that keeps you away from *Elm*, let's spend five more minutes together
-to break through this.
+documentations from the trendiest frameworks are more "standard", more usual.  Inasmuch as it
+seems to be the only obstacle that keeps you away from *Elm*, let's spend five more minutes
+together to break through this.
 
 So here we are, talking about [Hindley-Milner][hindleymilner] type signatures. Trust me on
 that, once you can read that fluently, it becomes the best documentation you'll ever have.
