@@ -7,10 +7,11 @@ cover: /img/articles//cover.jpg
 author: Matthias Benkort
 ---
 
-While achieving a small *Angular* app today, my thoughts stumbled accross something. Why isn't
-more people learning *Elm*? There're loads of frontend technologies running currently, and the
-trendiest one might be *React*. I've played rather correctly with *React* and *Backbone*, and I
-am now diving a bit into *Angular*. Incidentally, I am a huge fan of functional reactive
+While achieving a small *Angular* app today, my thoughts stumbled accross something that pique
+curiosity. Why isn't more people learning *Elm*? There're loads of frontend technologies
+running currently, and the trendiest one might be *React*. I've played rather correctly with
+*React* and *Backbone*, and I am now diving seriously into *Angular* (you know, you still have
+to eat at the end of the month). Incidentally, I am a huge fan of functional reactive
 programming and *Elm* has definitely all my love and devotion. 
 
 <!--more-->
@@ -23,29 +24,30 @@ requires you have an idea of what is happening at the rendering level with the v
 factories, directives and how they play well with the two-way data-binding. I won't carp about
 *Backbone* because you get the idea. Each framework demands a set of prerequisite knowledge,
 that may echo from one to another but nonetheless stay disparate. Although they usually rely on
-strong theoritical concepts, they are often so deeply entangled in the framework that is
-complicated to re-use them out of their context. You'll get familiar with the *React* way, or
-the *Angular* way yet you're not likely to re-use their concepts elsewhere on your own (mainly
-because you'll be using another framework and be compliant with new patterns). Why don't you
-learn *Elm* instead? Well I know, *Elm* is a different language (and a functional one, yuck!)
-and the learning curve is way too important.
+strong theoritical concepts, they are often so deeply entangled in the framework that it is
+complicated to use them out of their initial context. You'll get familiar with the *React* way,
+or the *Angular* way yet you're not likely to re-use their concepts elsewhere on your own
+(mainly because you'll be using another framework and be compliant with new patterns). Why
+don't you learn *Elm* instead? Well I know, *Elm* is a different language (and a functional
+one, yuck!) and the learning curve is way too important. Meh.
 
-Therefore it seems familiar and comfortable as the big majority of frontend frameworks is built
-on top of *JavaScript*. Hence it feels like there's one less barrier to overcome; the
-underlying language is always the same, isn't it? Having a quick look at the *JavaScript* in
-*Angular*, and the one in *React*, it really looks like two fairly different flavor of
-*JavaScript*. The former would rather uses a Vanilla/ES5 *JavaScript* whereas the latter
-embraces ES6/ES7 with an extensive usage of destructuring and methods declaration shortcuts. It
-really sounds like two different - albeit from a common ancestor - languages. You end up
-learning two distinct languages. So what's your excuse now? Instead of learning a framework
-(and its underlying *JavaScript* flavor), you're able to deal with a language which will by
-itself, intrinsically, offers you all the control and the behaviour you'll expect from a
-framework. Plus, because you are facing directly patterns and concerns which built your code,
-you're getting more stronger insights. There's one remark though. I've been told the main issue
-with *Elm* was about reading the documention. For non fonctional programming developers, it
-appears to be an impenetrable dialect whereas documentations from trendiest frameworks are more
-"standard", more usual.  Inasmuch as it seems to be the only obstacle that keeps you away from
-*Elm*, let's spend five more minutes together to break through this.
+Therefore it seems familiar and comfortable, as the big majority of frontend frameworks is
+built on top of *JavaScript*, to stick with *JavaScript* as much as possible. Hence it feels
+like there's one less barrier to overcome; the underlying language is always the same, isn't
+it? Having a quick look at the *JavaScript* in *Angular*, and the one in *React*, it really
+looks like two fairly different flavor of *JavaScript*. The former would rather uses a
+Vanilla/ES5 *JavaScript* whereas the latter embraces ES6/ES7 with an extensive usage of
+destructuring and methods declaration shortcuts. It really sounds like two different - albeit
+from a common ancestor - languages. You end up learning two distinct languages. So what's your
+excuse now? Instead of learning a framework (and its underlying *JavaScript* flavor), you're
+able to deal with a language which will by itself, intrinsically, offers you all the control
+and the behaviour you'll expect from a framework. Plus, because you are facing directly
+patterns and concerns which built your code, you're getting more stronger insights. There's one
+remark though. I've been told the main issue with *Elm* was about reading the documention. For
+non fonctional programming developers, it appears to be an impenetrable dialect whereas
+documentations from trendiest frameworks are more "standard", more usual.  Inasmuch as it seems
+to be the only obstacle that keeps you away from *Elm*, let's spend five more minutes together
+to break through this.
 
 So here we are, talking about [Hindley-Milner][hindleymilner] type signatures. Trust me on
 that, once you can read that fluently, it becomes the best documentation you'll ever have.
