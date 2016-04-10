@@ -10,3 +10,7 @@ _site
 Session.vim
 .netrwhist
 *~
+
+node_modules/
+elm-stuff/
+
