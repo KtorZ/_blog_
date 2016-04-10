@@ -16,38 +16,41 @@ aren't more people learning *Elm*?**
 
 <!--more-->
 
-So, let me try to make a point. Each time one learns a new framework, one get used to the
-intrinsic philosophy that this framework built. *React* expects you to understand what
+So, let me try to make a point. Each time one learns a new framework, one gets used to the
+intrinsic philosophy that this framework builds. *React* expects you to understand what
 components are and how they behave towards their properties, states and listeners. It also
 requires you to have an idea of what is happening at the rendering level with the virtual dom.
 *Angular* on the other hand presents a slew of services you can inject in your controllers,
 factories, directives and how they play well with the two-way data-binding. I won't carp about
-*Backbone* because you've get the idea. Each framework demands a some prerequisite knowledge
-that may echo from one to another but nonetheless stay disparate. Although they usually rely on
-strong theoretical concepts, they are often **so deeply entangled in the framework** that it is
-complicated to **use them out of their initial context**. You'll get familiar with the *React*
-way, or the *Angular* way yet you're not likely to re-use their concepts elsewhere on your own
-(mainly because you'll be using another framework and be compliant with new patterns). Why
-don't you learn *Elm* instead? Well I know, *Elm* is a different language (and a functional
-one, yuck!) and the learning curve is way too important. Meh.
+*Backbone* because you've get the idea. Each framework demands some knowledge, a set of
+prerequisite that may echo from one to another but nonetheless stay disparate. Although they
+usually rely on strong theoretical concepts, they are often **so deeply entangled in the
+framework** that it is complicated to **use them out of their initial context**. You'll get
+familiar with the *React* way, or the *Angular* way yet you're not likely to re-use their
+concepts elsewhere on your own (mainly because you'll be using another framework and be
+compliant with new patterns). Why don't you learn *Elm* instead? Well I know, *Elm* is a
+different language (and a functional one, yuck!) and the learning curve is way too important.
+Meh.
 
 Therefore, it seems familiar and comfortable, as the big majority of frontend frameworks is
 built on top of *JavaScript*, to stick with *JavaScript* as much as possible. Hence, it feels
 like there's one less barrier to overcome; the underlying language is always the same, isn't
 it? Having a quick look at the *JavaScript* in *Angular*, and the one in *React*, it really
-looks like two fairly different flavor of *JavaScript*. The former would rather use a
+looks like two fairly different flavors of *JavaScript*. The former would rather use a
 Vanilla/ES5 *JavaScript* whereas the latter embraces ES6/ES7 with an extensive usage of
 destructuring and methods declaration shortcuts. It really sounds like two different - albeit
 from a common ancestor - languages. **You end up learning two distinct languages**. So what's
-your excuse now? Instead of learning a framework (and its underlying *JavaScript* flavor),
-you're able to deal with a language which will by itself, intrinsically, offer you **all the
-control and the behaviour you'll expect from a framework**. Plus, because you are directly
-facing patterns and concerns which built your code, you're getting stronger insights. There's
-one remark though. I've been told the main issue with *Elm* was about reading the
-documentation.  For non functional programming developers, it appears to be an impenetrable
-dialect whereas documentations from the trendiest frameworks are more "standard", more usual.
-Inasmuch as it seems to be the only obstacle that keeps you away from *Elm*, let's spend five
-more minutes together to break through this.
+your excuse now? 
+
+Instead of learning a framework (and its underlying *JavaScript* flavor), you're able to deal
+with a language which will by itself, intrinsically, offer you **all the control and the
+behaviour you'll expect from a framework**. Plus, because you are directly facing patterns and
+concerns which built your code, you're getting stronger insights. There's one remark though.
+I've been told the main issue with *Elm* was about reading the documentation.  For non
+functional programming developers, it appears to be an impenetrable dialect whereas
+documentations from the trendiest frameworks are more "standard", more usual.  Inasmuch as it
+seems to be the only obstacle that keeps you away from *Elm*, let's spend five more minutes
+together to break through this.
 
 So here we are, talking about [Hindley-Milner][hindleymilner] type signatures.  Besides being
 present in every functional programming language (like the mighty *Haskell* for instance), it
@@ -59,12 +62,12 @@ is a powerful way of communicating insights. Trust me on that, once you can read
 isEmpty: String -> Bool
 {% endhighlight %}
 
-First, there's the function name `isEmpty` that identifies the signature after the colon. Then,
-we find two types separated by an arrow. Incidentally, this type system is seemingly relevant
-because *Elm* is a strongly statically typed language. Although it sounds rather obvious, it is
-worth a remark. So, the arrow basically means that given what is on the left side, your
-function will give you what is on the right side. In this case, this is straightforward, given
-a `String`, you'll get a result of `Bool` type. What about several arrows?
+First, there's the function's identifier `isEmpty` that names the signature. Then, we find two
+types separated by an arrow. Incidentally, this type system is seemingly relevant because *Elm*
+is a strongly statically typed language. Although it sounds rather obvious, it is worth a
+remark. So, the arrow basically means that given what is on the left side, your function will
+give you what is on the right side. In this case, this is straightforward, given a `String`,
+you'll get a result of `Bool` type. What about several arrows?
 
 {% highlight haskell %}
 repeat : Int -> String -> String
@@ -72,13 +75,23 @@ repeat : Int -> String -> String
 
 Well, the previous rule still applies. There're now two different cases though. We either
 provide an `Int` to the `repeat` function, or we provide an `Int` and a `String` (in that
-order). In the second case, we get a `String` as a result (`repeat 2 "patate" ==
-"patatepatate"`). In the first case however, we obtain a function that will, given a `String`,
-return a `String`. Assuming we provided `14` as an `Int`, then we could write the result the
-following way:
+order). In the second case, we get a `String` as a result.
 
 {% highlight haskell %}
-repeat14: String -> String
+repeat 2 "patate" 
+-- "patatepatate
+{% endhighlight %}
+
+In the first case however, we obtain a function that will, given a `String`, return a `String`.
+Assuming we provided `2` as an `Int`, then we could write the result the following way:
+
+{% highlight haskell %}
+repeat2: String -> String
+repeat2 = 
+    repeat 2
+
+repeat2 "patate"
+-- "patatepatate"
 {% endhighlight %}
 
 Can you feel **the expressiveness** of the type system? Brace yourself, there's more. Try to get
@@ -137,7 +150,8 @@ which they based their architecture (*Cycle* and *React*+*Redux* are good exampl
 Now, **[go learn some *Elm*][elm]**. And for the most curious, [Evan Czaplicki][evan] about *Elm*.
 
 
-> Many thanks to [Romain Pellerin][romain] & [Nicolas Gaborit][nicolas] for the proof-reading and advice.
+> Many thanks to [Romain Pellerin][romain], [Nicolas Gaborit][nicolas] & Matthieu Pizenberg for
+> the proof-reading and advice.
 
 [elm]: http://elm-lang.org/try
 [hindleymilner]: https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system
