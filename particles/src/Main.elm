@@ -13,8 +13,10 @@ import Html.Events exposing (..)
 type alias Simulation =
   { particles: List Particle
   , socialMode: Bool
+  , debugMode: Bool
   , width: Int
   , height: Int
+  , domains: List Domain
   }
 
 type alias Particle =
@@ -23,19 +25,30 @@ type alias Particle =
   , d: Float
   }
 
+type alias Domain =
+  { particles: List Particle
+  , center: Particle
+  }
+
 type Action
   = Move
   | Rotate Int
-  | Toggle Bool
+  | ToggleSocial Bool
+  | ToggleDebug Bool
   | Resize Int
+  | Socialize
 
 rand : Random.Generator Int
 rand =
-  Random.int -30 30
+  Random.int -45 45
+
+sizeDomain: Float
+sizeDomain =
+  100
 
 init : Simulation
 init =
-  Simulation (List.repeat 300 (Particle 0 0 0)) False 500 500
+  Simulation (List.repeat 100 (Particle 0 0 0)) False False 500 500 []
 
 moveParticle : (Int, Int) -> Particle -> Particle
 moveParticle (w,h) p =
@@ -59,48 +72,96 @@ drawParticle p =
     |> move (p.x,p.y)
     |> rotate (degrees p.d)
 
+drawDomain: Domain -> Form
+drawDomain d =
+  circle sizeDomain
+    |> outlined (solid Color.lightRed)
+    |> move (d.center.x, d.center.y)
+
+updateDomains: Particle -> List Domain -> List Domain
+updateDomains p domains =
+  let
+      belong = List.filter (\d -> distance2 d.center p <= sizeDomain*sizeDomain) domains
+  in if List.isEmpty belong
+  then (Domain [p] p) :: domains
+  else List.map (\d -> if List.member d belong then addParticle d  p else d) domains
+
+addParticle: Domain -> Particle -> Domain
+addParticle d p =
+    { d | particles = p :: d.particles, center = (Particle d.center.x d.center.y (d.center.d + p.d)) }
+
+distance2: Particle -> Particle -> Float
+distance2 a b =
+  (a.x - b.x)^2 + (a.y - b.y)^2
+
+socializeParticle: List Domain -> Particle -> Particle
+socializeParticle domains p =
+  case List.filter (.particles >> List.member p) domains |> List.head of
+    Nothing ->
+      p -- Cannot happen
+    Just d ->
+      let
+        avgDir = toFloat ((round d.center.d) % 360) / (List.length d.particles |> toFloat)
+      in
+        { p | d = p.d * 0.2 + avgDir * 0.8}
+
 update: Action -> Simulation -> Simulation
 update op simul =
   case op of
     Move ->
-      if simul.socialMode then
-        { simul | particles = List.map (moveParticle (simul.width, simul.height)) simul.particles }
-      else
-        simul
+      { simul | particles = List.map (moveParticle (simul.width, simul.height)) simul.particles }
     Rotate s ->
-      if simul.socialMode then
-         { simul | particles = fst (List.foldr rotateParticle ([], Random.initialSeed s) simul.particles) }
-      else
-        simul
-    Toggle x -> { simul | socialMode = x}
+        { simul | particles = fst (List.foldr rotateParticle ([], Random.initialSeed s) simul.particles) }
+    ToggleSocial x -> { simul | socialMode = x}
+    ToggleDebug x -> { simul | debugMode = x}
     Resize x -> { simul | width = x }
+    Socialize ->
+      if simul.socialMode then
+        let
+          domains = List.foldr updateDomains [] simul.particles
+          particles = List.map (socializeParticle domains) simul.particles
+        in
+          { simul | particles = particles, domains = if simul.debugMode then domains else [] }
+      else
+        { simul | domains = [] }
 
 main : Signal Html
 main =
   let
-    operations = Signal.mailbox (Toggle False)
+    operations = Signal.mailbox (ToggleSocial True)
     signals = Signal.mergeMany
         [ Signal.map Resize Window.width
         , operations.signal
         , Signal.map (Time.inMilliseconds >> round >> Rotate) (Time.every (200 * Time.millisecond))
         , Signal.map (always Move) (Time.fps 30)
+        , Signal.map (always Socialize) (Time.fps 5)
         ]
     particles = Signal.Extra.foldp' update (flip update init) signals |> Signal.map fromSimulation
   in
     Signal.map (view operations.address) particles
 
-fromSimulation : Simulation -> (Bool, Html)
+fromSimulation : Simulation -> (Bool, Bool, Html)
 fromSimulation s =
-  (s.socialMode, s |> (fromElement << collage s.width s.height << (List.map drawParticle) << .particles))
+  let
+      particles = List.map drawParticle s.particles
+      domains = List.map drawDomain s.domains
+  in
+    (s.socialMode, s.debugMode, List.append particles domains |> collage s.width s.height |> fromElement)
 
-
-view : Signal.Address Action -> (Bool, Html) -> Html
-view addr (on, simul) =
+view : Signal.Address Action -> (Bool, Bool, Html) -> Html
+view addr (isSocial, isDebug, simul) =
   div []
   [ div [ class "simulation" ] [ simul ]
-  , div [ classList [("controls", True), ("activated", on)] ]
-    [ label [onClick addr (Toggle (not on))] [ Html.text "on" ]
-    , label [onClick addr (Toggle (not on))] [ Html.text "off" ]
-    , input [ type' "button", onClick addr (Toggle (not on)) ] []
+  , div [ classList [("controls", True), ("activated", isSocial)] ]
+    [ Html.text "Social: "
+    , label [onClick addr (ToggleSocial (not isSocial))] [ Html.text "on" ]
+    , label [onClick addr (ToggleSocial (not isSocial))] [ Html.text "off" ]
+    , input [ type' "button", onClick addr (ToggleSocial (not isSocial)) ] []
+    ]
+  , div [ classList [("controls", True), ("activated", isDebug)] ]
+    [ Html.text "Debug: "
+    , label [onClick addr (ToggleDebug (not isDebug))] [ Html.text "on" ]
+    , label [onClick addr (ToggleDebug (not isDebug))] [ Html.text "off" ]
+    , input [ type' "button", onClick addr (ToggleDebug (not isDebug)) ] []
     ]
   ]
