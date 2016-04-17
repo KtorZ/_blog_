@@ -1,0 +1,184 @@
+---
+layout: post
+title:  How to Git?
+date:   2015-12-10 08:53:00
+author: Matthias Benkort
+---
+
+Another cookbook about git. I hereby expose some recipes I encounter quite often. This post is
+likely to evolve in the future and to be completed on purpose.
+
+## Summary
+
+How to...
+
+- [change the last commit](#change-the-last-commit)
+- [change the last commit message](#change-the-last-commit-message)
+- [rebase and preserve commit dates](#rebase-and-preserve-commit-dates)
+- [make an empty commit](#make-an-empty-commit)
+- [change messages of a set of commits](#change-messages-of-a-set-of-commits)
+- [change the commit date of an old commit](#change-the-commit-date-of-an-old-commit)
+- [import only a subdirectory of an existing repository](#import-only-a-subdirectory-of-an-existing-repository)
+- [excludes some files by default, always](#excludes-some-files-by-default-always)
+- [show all commits related to a specific file](#show-all-commits-related-to-a-specific-file)
+- [make git cli get rid of small typos](#make-git-cli-get-rid-of-small-typos)
+- [create a new detached branch](#create-a-new-detached-branch)
+- [temporary ignore files](#temporary-ignore-files)
+
+**last changes: 01-02-2016**
+
+
+## Recipes
+
+### ... change the last commit
+
+{% highlight bash %}
+git add ...
+git commit --amend -C HEAD
+{% endhighlight %}
+
+Incidentally, `-C` option (as well as `-c` that also let you edit the message) can be used to
+re-use any any commit's message you wish. By giving it `HEAD`, we just ask for the last one. 
+
+#### ... change the last commit message
+
+{% highlight bash %}
+git add [whatever]
+git commit --amend -m "<whatever>"
+{% endhighlight %}
+
+### ... rebase and preserve commit dates
+
+{% highlight bash %}
+git rebase --onto <newbase> <branch> <upstream>
+git rebase --committer-date-is-author-date <newbase>
+{% endhighlight %}
+
+By default, a `git rebase` does not overwrite the author dates. Thus, after having perform the
+rebase, one can still ask git to rewrite all commit dates and make them match their author
+
+### ... make an empty commit
+
+{% highlight bash %}
+git commit --allow-empty -m "<whatever>"
+{% endhighlight %}
+
+### ... change messages of a set of commits
+
+
+{% highlight bash %}
+git filter-branch --msg-filter 'echo "<whatever> $(cat)"' <branch>...<REF_LIMIT>
+
+{% endhighlight %}
+
+Here, `$(cat)` prints the previous commit message such that we can append or prepend elements
+to that message. Also, by default (without `<branch>...<REF_LIMIT>`), the transformation will
+apply to the entire branch. By specifying a `REF_LIMIT`, which is a commit ref, it is possible
+to stop the process on that specified commit (exclusive, the `REF_LIMIT` isn't affected).
+
+### ... change the commit date of an old commit
+
+
+{% highlight bash %}
+git filter-branch --env-filter \
+'if [ $GIT_COMMIT = <whatever_commit_hash> ]
+ then
+ export GIT_AUTHOR_DATE=<whatever_date>
+ export GIT_COMMITTER_DATE=<whatever_date>
+ fi'
+{% endhighlight %}
+
+Git supports several date format, for instance: `dd.mm.aaaaThh:mm` is one of them and is
+seemingly handy.
+
+### ... import only a subdirectory of an existing repository 
+
+
+{% highlight bash %}
+git config core.sparsecheckout true
+echo whatever/subdirectory >> .git/info/sparse-checkout
+git fetch <whatever-remote>
+git read-tree -mu <whatever-remote>/<whatever-branch>
+{% endhighlight %}
+
+### ... excludes some files by default, always
+
+Create a global `.gitignore`, somewhere in a safe and soft place:
+
+**.gitignore**
+
+{% highlight bash %}
+
+.DS_Store
+Thumbs.db
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+{% endhighlight %}
+
+And, either modify your `.gitconfig` if any, or use the CLI directly:
+
+
+{% highlight bash %}
+git config --global core.excludesfile=/path/to/.gitignore
+{% endhighlight %}
+
+Files such as buffers created by vim shouldn't be present in a project `.gitignore`. This
+should semantically be related to the project itself, not to the tools or IDE one's using.
+
+### ... show all commits related to a specific file
+
+
+{% highlight bash %}
+git log --follow <whatever-file>
+{% endhighlight %}
+
+The `-p` option might be added to also show the content of each commit and to thereby give an
+overview of all changes that lead to the current file content.
+
+### ... make git cli get rid of small typos
+
+{% highlight bash %}
+git config --global help.autocorrect=1
+{% endhighlight %}
+
+Simple, efficient, clean.
+
+### ... create a new detached branch
+
+{% highlight bash %}
+git checkout --orphan <whatever-branch>
+git reset
+{% endhighlight %}
+
+This will allow you to start a complete new branch which as to link to another one. A starting
+point for the new branch can also be specified alongside the branch's name. 
+
+### ... temporary ignore files
+
+{% highlight bash %}
+git update-index --assume-unchanged <whatever-file>
+{% endhighlight %}
+
+And this could be undone with:
+
+{% highlight bash %}
+git update-index --no-assume-unchanged <whatever-file>
+{% endhighlight %}
+
+Doing this, you can simply ignore changes that occurs on a file stored in the git-index. Why
+doing such a thing ? For instance, you'll have to change the content of a file during a small
+dev session (you add some log lines or some other irrelevant content inside) but the real
+effort concerns other files in the repo. You still want to commit changes and to operate as
+usual, then, you can temporary ignore those files. Also, if you have for instance some
+compressed zip files manipulated only by the compiler or any external tools, you may want to
+ship only those compressed zip files and not the garbage generated by the tools afterwards.
+Then, you can simply ignore changes to those files but still add them (--force) once and assume
+them unchanged in the future so that the only version git will care about is the first one you
+ever committed. That's tricky but it sometimes useful. 

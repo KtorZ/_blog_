@@ -2,8 +2,6 @@
 layout: post
 title:  @title@
 date:   @date@
-categories:
-cover: /img/articles//cover.jpg
 author: Matthias Benkort
 ---
 

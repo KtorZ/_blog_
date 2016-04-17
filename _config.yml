@@ -1,73 +1,38 @@
-# SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ktorz.github.io" # the base hostname & protocol for your site
-
-# THEME-SPECIFIC CONFIGURATION
-theme:
-  # Meta
-  title: KtorZ
-  description: "Sanctuary of thoughts, mainly about programming." # used by search engines
-
-  # Header and footer text
-  header_text: >
-      <p>
-        "Science is what we understand well enough to explain to a computer. Art is everything else we do."
-        </br>
-        <strong>Donald Knuth</strong>
-      </p>
-  header_text_feature_image:
-  footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-
-  # Icons
-  rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
-  github: "ktorz"
-  google_plus: matthias.benkort
-  instagram:
-  linkedin: https://fr.linkedin.com/pub/matthias-benkort/57/86a/471
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange: http://stackoverflow.com/users/2542201/ktorz
-  steam:
-  tumblr:
-  twitter:
-  wordpress:
-  youtube:
-
-  # Scripts
-  google_analytics: UA-70152327-1
-  disqus_shortname: ktorz
-  katex: true # Enable if using math markup
-
-  # Localization strings
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next: "Next"
-  str_prev: "Prev"
-  str_continue_reading: "Go for it"
-
-  # Colours, typography and padding
-  # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Open+Sans:400,700,700italic,400italic"
-
-  # Post navigation
-  post_navigation: false
-
-# PAGINATION
-paginate: 5
-paginate_path: "blog/page:num"
-
-# BUILD SETTINGS
-markdown: kramdown
-highlighter: pygments
+source: source
+destination: _site
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
+
+# permalink and highlighter
+permalink   : /:year/:month/:day/:title/
+markdown    : kramdown
+highlighter : pygments
+
+# SEO settings
+title: KtorZ's Blog
+description: "Computer Science and Philosophy"
+keywords: "KtorZ, github, developer, blog, software engineer, matthias, benkort"
+
+# Site settings
+url: http://ktorz.github.io
+baseurl: ""
+
+# Author settings
+author:
+  name      : Matthias Benkort
+  job       : Software Engineer
+  bio       : "Functional programming enthusiast; frontend and backend Software engineer with a strong interest in machine learning"
+  thumb     : /img/ktorz.png
+  email     : matthias.benkort@gmail.com
+  url       : http://ktorz.github.io
+  github    : http://github.com/KtorZ
+  twitter   : http://twitter.com/mbenkort
+  linkedin  : http://linkedin.com/in/matthias-benkort-47186a57
+  stack_exchange: http://stackoverflow.com/users/2542201/ktorz
+
+google_analytics: UA-70152327-1
+repo: http://github.com/KtorZ/ktorz.github.io
+
+# comments
+disqus_shortname: "ktorz"
