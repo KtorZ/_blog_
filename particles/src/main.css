@@ -1,0 +1,55 @@
+html,head,body {
+    padding:0; margin:0;
+}
+body {
+    font-family: calibri, helvetica, arial, sans-serif;
+}
+.controls, .simulation {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    font-size: 1.5em;
+}
+.simulation > div {
+    border: 1px dashed #CCCCCC;
+}
+.controls input {
+    background: #7f8c8d;
+    border: none;
+    outline: none;
+    position: relative;
+    left: -75px;
+    opacity: 1;
+    transition-property: left, background;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    width: 50px;
+    box-sizing: border-box;
+}
+.controls.activated input {
+    left: -25px;
+    background: #27ae60;
+    transition-property: left, background;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+.controls label {
+    box-sizing: border-box;
+    width: 50px;
+    border: 1px solid #7f8c8d;
+    text-align: center;
+    position: relative;
+    left: 25px;
+    font-variant: small-caps;
+    color: #7f8c8d;
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
+.controls.activated label {
+    border: 1px solid #27ae60;
+    color: #27ae60;
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-out;
+}
