@@ -19,7 +19,6 @@ $icon-linkedin: "\e905";
   font-family: $icons-family;
   src:url('#{$icons-path}#{$icons-family}.eot?vs69d0');
   src:url('#{$icons-path}#{$icons-family}.eot?vs69d0#iefix') format('embedded-opentype'),
-      url('#{$icons-path}#{$icons-family}.ttf?vs69d0') format('truetype'),
       url('#{$icons-path}#{$icons-family}.woff?vs69d0') format('woff'),
       url('#{$icons-path}#{$icons-family}.svg?vs69d0#dotx-icons') format('svg');
   font-weight: normal;
