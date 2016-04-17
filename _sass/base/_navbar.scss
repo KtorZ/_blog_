@@ -149,7 +149,7 @@
   h2 {
     position: relative;
     margin-bottom: 1.7em;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 800;
     color: darken($white-color, 5%);
     text-transform: uppercase;
@@ -170,11 +170,11 @@
     margin-top: 60px;
 
     li {
-      margin: 1.6em 0;
+      margin: 1.3em 0;
     }
 
     a {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       text-decoration: none;
       color: rgba($white-color, .5);
       font-weight: $font-weight-light;
@@ -207,17 +207,17 @@
     }
 
     h2 {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       margin-bottom: 5.6em;
     }
 
     .primary-nav {
       li {
-        margin: 2em 0;
+        margin: 1.5em 0;
       }
 
       a {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
     }
   }
