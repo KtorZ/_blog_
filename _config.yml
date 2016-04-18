@@ -6,7 +6,7 @@ sass:
 # permalink and highlighter
 permalink   : /:year/:month/:day/:title/
 markdown    : kramdown
-highlighter : pygments
+highlighter : rouge
 
 # SEO settings
 title: KtorZ's Blog
