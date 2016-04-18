@@ -2,14 +2,97 @@
 layout: blank
 ---
 
+<style>
+
+span.intro-subtitle-1 {
+    opacity: 0;
+    -webkit-animation: fadeIn 1s ease-out 0.5s forwards;
+    animation: fadeIn 1s ease-out 0.5s forwards;
+}
+span.intro-subtitle-2 {
+    opacity: 0;
+    -webkit-animation: fadeIn 2s ease-out 1.75s forwards;
+    animation: fadeInDown 2s ease-out 1.75s forwards;
+}
+
+span.intro-subtitle-3 {
+    opacity: 0;
+    position: relative;
+    top: -1em;
+    -webkit-animation: fadeInDown 2s ease-out 4.25s forwards;
+    animation: fadeInDown 2s ease-out 4.25s forwards;
+}
+
+div.intro-subtitle-author {
+    opacity: 0;
+    position: relative;
+    left: 50%;
+    -webkit-animation: fadeInLeft 2s ease-out 6.5s forwards;
+    animation: fadeInLeft 2s ease-out 6.5s forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from{
+        opacity: 0;
+        top: -1em;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes fadeInLeft {
+    from{
+        opacity: 0;
+        left: 50%;
+    }
+    to{
+        opacity: 1;
+        left: 40%;
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    from{
+        opacity: 0;
+        left: 1em;
+    }
+    to{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+</style>
+
 <div class="home-intro">
     {% include navbar.html %}
     <section class="intro">
       <div class="intro-in">
         <h1 class="intro-title">KtorZ</h1>
         <h2 class="intro-subtitle">
-            Science is what we understand well enough to explain to a computer.
-            Art is everything else we do.
+            <span class="intro-subtitle-1">Science</span> <span class="intro-subtitle-2">is what we understand well enough to
+                explain to a computer.</span>
+            <span class="intro-subtitle-3">Art is everything else we do.</span>
         </h2>
         <div class="intro-subtitle-author">Donald Knuth</div>
       </div>
