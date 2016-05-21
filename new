@@ -2,7 +2,7 @@
 
 var fs = require('fs'),
     path = require('path'),
-    POSTS_PATH = path.join(process.cwd(), 'source', '_posts');
+    POSTS_PATH = path.join(process.cwd(), '_posts');
 
 
 /* Get the article name */
@@ -30,6 +30,7 @@ if (process.argv[3]) {
 
 /* Ensure that the article doesn't exist */
 var filename = path.join(POSTS_PATH, dateStamp + "-" + title.replace(/ /g, "_").toLowerCase() + ".markdown");
+console.log(filename)
 fs.readdir(POSTS_PATH, function (err, files) {
     if (err) { process.stdout.write(err); process.exit(1); }
 
