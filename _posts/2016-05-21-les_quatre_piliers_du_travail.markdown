@@ -37,7 +37,7 @@ d'infliger à Adam les peines du travail. Kant dira même du travail qu'il const
 qui par conséquent peut être imposée de manìère contraignante". On associe assez facilement
 l'effort au travail et l'on conçoit difficilement l'un sans l'autre. Nous considérons cette
 hypothèse comme le second pilier de notre approche. Le travail se distingue ici du simple
-esclavage de part le premier. En tant qu'activité consciente et voulue, le travail apparaît
+esclavage de par le premier. En tant qu'activité consciente et voulue, le travail apparaît
 éventuellement comme un asservissement volontaire. Nous n'irons pas jusque-là, mais c'est une
 formulation que l'on retrouve bien volontiers dès lors que l'on cherche à décrire une situation
 où la quantité travail semble injustifiée. 
@@ -74,7 +74,7 @@ Il y a cependant une question qui échappe à un raisonnement mathématique mais
 notre dernier socle, c'est le but que poursuit l'homme en travaillant. Pourquoi l'homme moderne
 travaille-t-il ? 
 
-> Cette question mérite à elle seule un exercice de réflexion similaire; nous
+> Cette question mérite à elle seule un exercice de réflexion similaire; nous nous
 > en servirons néanmoins ici comme d'un levier pour amener l'hypothèse suivante.
 
 L'idée développée par Michel Serres au sein d'une dialectique intéressante où il assimile le
