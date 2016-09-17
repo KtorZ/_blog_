@@ -300,7 +300,7 @@ pitfalls. Almost all objects that can be instantiated are stateless components. 
 hold any internal state; they do not mutate themselves throughout their life cycle. There's a
 huge difference between those two samples:
 
-{% highlight go %}
+{% highlight rust %}
 type Stateless struct {}
 
 func (s Stateless) Compute(state, v int) int {
@@ -308,7 +308,7 @@ func (s Stateless) Compute(state, v int) int {
 }
 {% endhighlight %}
 
-{% highlight go %}
+{% highlight rust %}
 type Stateful struct {
     state int
 }
@@ -355,7 +355,7 @@ which can be safely accessed simultaneously and which takes care of distributing
 of the underlying data it protects. Basically, in *Go*, it can be implemented really easily
 using [channels][channels] and function [closures][closures]. It goes like this:
 
-{% highlight go %}
+{% highlight rust %}
 const(
     Add Order = iota
     Sub
@@ -389,7 +389,7 @@ channels are concurrent-safe in *Go* by design. The channel can be accessed by m
 there's still one single agent that is having control over the variable. The same solution can
 be implemented with `mutex` as well (which I find most of the time a bit more inelegant). 
 
-{% highlight go %}
+{% highlight rust %}
 type Monitor struct{
     sync.Mutex
     counter uint
@@ -476,7 +476,7 @@ operational objects though I didn't mentioned that all dependencies were injecte
 component instantiation such that it's seemingly possible to declare a component full of fake
 internal components. 
 
-{% highlight go %}
+{% highlight rust %}
 // Actual interface
 type MyInterface interface{
     MyMethod(arg1 int, arg2 string) (int, error)
@@ -557,7 +557,7 @@ Looking at the code, we can split it in three global parts. First of all, the `u
 itself: the adapter plays the role of a server, listening to a specific port on which gateways
 can establish connections and send datagrams. 
 
-{% highlight go %}
+{% highlight rust %}
 func listen(netAddr string, conn *net.UDPConn) {
     for {
         // 1. Read from connection
@@ -607,7 +607,7 @@ albeit they are rather similar. We deal with this concern by using *Go*
 [struct-tags][structtags].  Hence, for instance, to inject metadata from a network packet to a
 txpk packet, we use the following small though not straightforward piece of code:
 
-{% highlight go %}
+{% highlight rust %}
 func injectMetadata(xpk interface{}, src interface{}) interface{} {
 	m := reflect.ValueOf(src)
 	x := reflect.ValueOf(xpk).Elem()
@@ -643,7 +643,7 @@ communicate only the bare minimum to the rest of the chain.
 A router is split into three main parts that are quite close. They actually have been separated
 to enhance readibility and clarity. Here's what it looks like:
 
-{% highlight go %}
+{% highlight rust %}
 func HandleStats(request) (response, error) {
     // 1. Validate request
     // 2. Update gateway statistics
@@ -733,7 +733,7 @@ store information about applications and running end-devices.
 The broker handles data and join-request in a similar fashion, considering the following
 pseudo-code:
 
-{% highlight go %}
+{% highlight rust %}
 func HandleData(request) (response, error) {
     // 1. Validate request
     // 2. Retrieve associated entries, if any
@@ -791,7 +791,7 @@ The handler also defines, like other core components, `rpc` methods intended to 
 remotely. These methods work in pair with the two sub-processes which, by taking advantage of
 *Go* channels' nature, enables a synchronous and quite straightforward operation. For instance:
 
-{% highlight go %}
+{% highlight rust %}
 func HandleDataUp(request) (response, error) {
     // 1. Validate request
     // 2. Retrieve device data from AppEUI + DevEUI
