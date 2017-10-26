@@ -212,10 +212,10 @@ git branch --merged | grep -v $(git rev-parse --abbrev-ref HEAD) | xargs git bra
 # or simply, if you are on the master branch
 
 git branch --merged | grep -v master | xargs git branch -d
-{ endhighlight %}
+{% endhighlight %}
 
 And, to delete branches from the remote (assuming there's only one remote named origin)
 
 {% highlight bash %}
 git branch -a | grep -E "^\s*remotes" | sed "s%\s*remotes/[^/]*/\(.*\)%\1%" | xargs git push origin --delete
-{ endhighlight %}
+{% endhighlight %}
