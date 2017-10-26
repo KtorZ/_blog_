@@ -6,55 +6,47 @@ permalink: /about/
 
 ### Who I am
 
-Hi! My name is *KtorZ* a.k.a *Matthias Benkort* and I am a passionnate developer and computer
-scientist. Doing better every other day is basically what I am striving to. Computer science is
-such a wide domain; there is always something new to see, a fresh piece of knowledge to grab
-or something that will in a way busy your brain for a while. That's awesome.
+Functional Programming & Philosophy enthusiast. Programming elegant solutions for puzzling
+problems has been my passion since I am ten. Besides, cooking, bouldering, exploring music, and
+drinking tea are the current pillars of my personal well-being.
 
 <p align="center">
     <img src="/img/ktorz.png" width="150"/>
 </p>
 
-I really enjoy challenges and algorithmic problems. Above all, if it implies artificial
-intelligence, machine learning or functional programming, this is the icing on the cake. What
-am I doing right now? I am facing motivating challenges, sharpening my programming skills and
-insights; All of that surrounded by other passionate developers and great folks. 
+### My values
 
-### What I believe in
+I value others’ opinions and help.
+I proudly do because I enjoy doing it.
+I learn, question, adapt and evolve constantly.
+I base my decisions upon rational arguments and researches.
+I keep my own expectations always higher.
+I share and I communicate transparently.
+I eat my cheese with a Baguette.
 
-- One of the most important thing in a personal development is our ability to learn.
-- Everyone is equal in front of knowledge as long as one put the effort into it.
-- The acquisition of wealth shouldn't be the driving force of our lives anymore.
-- Sharing and communicating ought to be our top priority.
-- One doesn't need a lot to succeed; common sense and hard work are usually enough.
-- The more I learn, the more I see how much I still have to learn.
-- We need art like music, cinema or painting because this is what makes us feel human. I do need music, a lot.
-- I do things because I am happy doing so, not because an occult force is pushing me to.
-- I strive to keep my expectations about my work higher than the average people such that if I am fine with some piece of work, it is likely to be okay for anyone else.
+### My inspiration
+
+> Every great developer you know got there by solving problems they were unqualified to solve until they actually did it
+<p align="right"><strong>Patrick McKenzie</strong></p>
+
+> Make it correct, make it clear, make it concise, make it fast. In that order.
+<p align="right"><strong>Wes Dyer</strong></p>
+
+> People have an enormous tendency to resist change. They love to say, "We've always done it this way." I try to fight that.
+<p align="right"><strong>Grace Hopper</strong></p>
+
+> Focus is a matter of deciding what things you’re not going to do.
+<p align="right"><strong>John Carmack</strong></p>
+
+> As a software developer, you are your own worst enemy. The sooner you realize that, the better off you’ll be. 
+<p align="right"><strong>Jeff Atwood</strong></p>
 
 <br/>
-
-### The goals I pursue
-
-So far, I am still young and I need to learn, to get more skilled and more confident in
-development and software engineering in general. In a long-term, I do love playing with
-artificial intelligence and machine learning as well as I bask in the video game universe. I
-wish I could see myself involved in a video game development, closely talking with some
-researchers to implement artificial intelligence algorithms. 
-
-In a shorter term, I am trying to explore JavaScript and Haskell in depth. Both are highly
-capable languages and allow me to get rich insights about programming and softwares. Mastering
-these two languages and concepts orbiting around them might be if not helpful, at least
-interesting and rewarding.
-
-To fulfill such a dream, I need to get used to machine learning, functional programming and
-good patterns. Designing software solutions and being involved in some start-up
-projects is both motivating and full of enlightment. 
 
 <br/><br/><br/>
 
 <p align="center">
-    <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 24th January 2016">
-        C.V - updated the 24th January 2016
+    <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 26th October 2017">
+        C.V - updated the 26th October 2017
     </a>
 </p>
