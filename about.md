@@ -16,13 +16,13 @@ drinking tea are the current pillars of my personal well-being.
 
 ### My values
 
-I value others’ opinions and help.
-I proudly do because I enjoy doing it.
-I learn, question, adapt and evolve constantly.
-I base my decisions upon rational arguments and researches.
-I keep my own expectations always higher.
-I share and I communicate transparently.
-I eat my cheese with a Baguette.
+- I value others’ opinions and help.
+- I proudly do because I enjoy doing it.
+- I learn, question, adapt and evolve constantly.
+- I base my decisions upon rational arguments and researches.
+- I keep my own expectations always higher.
+- I share and I communicate transparently.
+- I eat my cheese with a Baguette.
 
 ### My inspiration
 
