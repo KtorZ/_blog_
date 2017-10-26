@@ -24,7 +24,17 @@ drinking tea are the current pillars of my personal well-being.
 - I share and I communicate transparently.
 - I eat my cheese with a Baguette.
 
-### My inspiration
+<br/><br/><br/>
+
+<p align="center">
+    <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 26th October 2017">
+        C.V - updated the 26th October 2017
+    </a>
+</p>
+
+<br/>
+
+### Some quotes
 
 > Every great developer you know got there by solving problems they were unqualified to solve until they actually did it
 <p align="right"><strong>Patrick McKenzie</strong></p>
@@ -40,13 +50,3 @@ drinking tea are the current pillars of my personal well-being.
 
 > As a software developer, you are your own worst enemy. The sooner you realize that, the better off you’ll be. 
 <p align="right"><strong>Jeff Atwood</strong></p>
-
-<br/>
-
-<br/><br/><br/>
-
-<p align="center">
-    <a href="/matthiasbenkort.cv.pdf" alt="C.V - updated the 26th October 2017">
-        C.V - updated the 26th October 2017
-    </a>
-</p>
